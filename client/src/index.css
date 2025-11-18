@@ -4,90 +4,101 @@
 
 /* LIGHT MODE */
 :root {
-  --button-outline: rgba(0,0,0, .10);
-  --badge-outline: rgba(0,0,0, .05);
+  --button-outline: rgba(0, 0, 0, 0.08);
+  --badge-outline: rgba(0, 0, 0, 0.06);
 
   /* Automatic computation of border around primary / danger buttons */
   --opaque-button-border-intensity: -8; /* In terms of percentages */
 
   /* Backgrounds applied on top of other backgrounds when hovered/active */
-  --elevate-1: rgba(0,0,0, .03);
-  --elevate-2: rgba(0,0,0, .08);
+  --elevate-1: rgba(0, 0, 0, 0.02);
+  --elevate-2: rgba(0, 0, 0, 0.05);
 
-  --background: 0 0% 3.53%;
+  /* Clean blue-gray background inspired by tech companies */
+  --background: 210 20% 98%;
 
-  --foreground: 0 0% 92.16%;
+  --foreground: 215 25% 15%;
 
-  --border: 0 0% 16.86%;
+  --border: 214 15% 88%;
 
-  --card: 300 4.35% 6.67%;
+  --card: 0 0% 100%;
 
-  --card-foreground: 0 0% 100%;
+  --card-foreground: 215 25% 15%;
 
-  --card-border: 0 0% 12%;
+  --card-border: 214 12% 92%;
 
-  --sidebar: 45 25% 97%;
+  /* Sidebar with subtle blue tone */
+  --sidebar: 210 25% 97%;
 
-  --sidebar-foreground: 20 14% 17%;
+  --sidebar-foreground: 215 25% 15%;
 
-  --sidebar-border: 45 15% 80%;
+  --sidebar-border: 214 15% 88%;
 
-  --sidebar-primary: 9 75% 61%;
+  /* Primary: Modern tech blue (LinkedIn/Facebook inspired) */
+  --sidebar-primary: 213 94% 55%;
 
   --sidebar-primary-foreground: 0 0% 100%;
 
-  --sidebar-accent: 25 45% 80%;
+  /* Accent: Lighter blue for hover states */
+  --sidebar-accent: 213 80% 95%;
 
-  --sidebar-accent-foreground: 20 14% 17%;
+  --sidebar-accent-foreground: 213 94% 45%;
 
-  --sidebar-ring: 9 75% 61%;
+  --sidebar-ring: 213 94% 55%;
 
-  --popover: 45 25% 97%;
+  --popover: 0 0% 100%;
 
-  --popover-foreground: 0 0% 100%;
+  --popover-foreground: 215 25% 15%;
 
-  --popover-border: 45 15% 88%;
+  --popover-border: 214 12% 92%;
 
-  --primary: 0 0% 96.08%;
+  /* Primary: Vibrant tech blue */
+  --primary: 213 94% 55%;
 
-  --primary-foreground: 0 0% 5.1%;
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 0 0% 92.16%;
+  /* Secondary: Soft blue-gray */
+  --secondary: 214 20% 94%;
 
-  --secondary-foreground: 0 0% 5.1%;
+  --secondary-foreground: 215 25% 15%;
 
-  --muted: 0 0% 25.1%;
+  /* Muted: Light blue-gray */
+  --muted: 214 20% 95%;
 
-  --muted-foreground: 0 0% 67.06%;
+  --muted-foreground: 215 15% 45%;
 
-  --accent: 0 0% 92.16%;
+  /* Accent: Light blue for highlights */
+  --accent: 213 80% 96%;
 
-  --accent-foreground: 0 0% 0%;
+  --accent-foreground: 213 94% 45%;
 
   --destructive: 356.3033 90.5579% 54.3137%;
 
   --destructive-foreground: 0 0% 100%;
 
-  --input: 0 0% 16.86%;
-  --ring: 221.74 13.14% 34.31%;
-  --chart-1: 203.8863 88.2845% 53.1373%;
-  --chart-2: 159.7826 100% 36.0784%;
-  --chart-3: 42.0290 92.8251% 56.2745%;
-  --chart-4: 147.1429 78.5047% 41.9608%;
-  --chart-5: 341.4894 75.2000% 50.9804%;
+  --input: 214 15% 25%;
+  /* Ring: Bright blue focus ring */
+  --ring: 213 94% 55%;
+  /* Charts: Modern tech color palette */
+  --chart-1: 213 94% 55%;  /* Primary blue */
+  --chart-2: 200 95% 50%;  /* Cyan */
+  --chart-3: 160 85% 45%;  /* Teal */
+  --chart-4: 265 85% 60%;  /* Purple */
+  --chart-5: 340 75% 55%;  /* Pink accent */
 
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Inter', sans-serif;
   --font-mono: Menlo, monospace;
   --radius: 0.4rem;
-  --shadow-2xs: 0px 2px 0px 0px hsl(9, 75%, 61% / 0.00);
-  --shadow-xs: 0px 2px 0px 0px hsl(9, 75%, 61% / 0.00);
-  --shadow-sm: 0px 2px 0px 0px hsl(9, 75%, 61% / 0.00), 0px 1px 2px -1px hsl(9, 75%, 61% / 0.00);
-  --shadow: 0px 2px 0px 0px hsl(9, 75%, 61% / 0.00), 0px 1px 2px -1px hsl(9, 75%, 61% / 0.00);
-  --shadow-md: 0px 2px 0px 0px hsl(9, 75%, 61% / 0.00), 0px 2px 4px -1px hsl(9, 75%, 61% / 0.00);
-  --shadow-lg: 0px 2px 0px 0px hsl(9, 75%, 61% / 0.00), 0px 4px 6px -1px hsl(9, 75%, 61% / 0.00);
-  --shadow-xl: 0px 2px 0px 0px hsl(9, 75%, 61% / 0.00), 0px 8px 10px -1px hsl(9, 75%, 61% / 0.00);
-  --shadow-2xl: 0px 2px 0px 0px hsl(9, 75%, 61% / 0.00);
+  /* Subtle shadows with blue tint for depth */
+  --shadow-2xs: 0px 1px 2px 0px hsl(213, 50%, 30% / 0.05);
+  --shadow-xs: 0px 1px 3px 0px hsl(213, 50%, 30% / 0.08);
+  --shadow-sm: 0px 2px 4px 0px hsl(213, 50%, 30% / 0.06), 0px 1px 2px -1px hsl(213, 50%, 30% / 0.04);
+  --shadow: 0px 4px 6px -1px hsl(213, 50%, 30% / 0.08), 0px 2px 4px -1px hsl(213, 50%, 30% / 0.05);
+  --shadow-md: 0px 6px 12px -2px hsl(213, 50%, 30% / 0.10), 0px 3px 7px -3px hsl(213, 50%, 30% / 0.06);
+  --shadow-lg: 0px 10px 20px -5px hsl(213, 50%, 30% / 0.12), 0px 6px 10px -5px hsl(213, 50%, 30% / 0.08);
+  --shadow-xl: 0px 20px 25px -5px hsl(213, 50%, 30% / 0.14), 0px 10px 15px -5px hsl(213, 50%, 30% / 0.10);
+  --shadow-2xl: 0px 25px 50px -12px hsl(213, 50%, 30% / 0.18);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
 
@@ -132,76 +143,87 @@
   --elevate-1: rgba(255,255,255, .04);
   --elevate-2: rgba(255,255,255, .09);
 
-  --background: 20 14% 4%;
+  /* Dark mode: Rich blue-black inspired by modern tech UIs */
+  --background: 215 25% 8%;
 
-  --foreground: 45 25% 91%;
+  --foreground: 210 20% 94%;
 
-  --border: 20 14% 15%;
+  --border: 215 20% 18%;
 
-  --card: 20 14% 8%;
+  --card: 215 22% 12%;
 
-  --card-foreground: 45 25% 85%;
+  --card-foreground: 210 20% 94%;
 
-  --card-border: 20 14% 12%;
+  --card-border: 215 20% 16%;
 
-  --sidebar: 20 14% 8%;
+  /* Dark sidebar with blue undertones */
+  --sidebar: 215 22% 10%;
 
-  --sidebar-foreground: 45 25% 85%;
+  --sidebar-foreground: 210 20% 94%;
 
-  --sidebar-border: 20 14% 15%;
+  --sidebar-border: 215 20% 18%;
 
-  --sidebar-primary: 9 75% 61%;
+  /* Primary: Bright tech blue that pops on dark */
+  --sidebar-primary: 213 94% 60%;
 
-  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-primary-foreground: 215 25% 8%;
 
-  --sidebar-accent: 25 45% 20%;
+  /* Accent: Deep blue for dark mode selections */
+  --sidebar-accent: 213 75% 22%;
 
-  --sidebar-accent-foreground: 45 25% 85%;
+  --sidebar-accent-foreground: 213 85% 80%;
 
-  --sidebar-ring: 9 75% 61%;
+  --sidebar-ring: 213 94% 60%;
 
-  --popover: 20 14% 4%;
+  --popover: 215 25% 10%;
 
-  --popover-foreground: 45 25% 91%;
+  --popover-foreground: 210 20% 94%;
 
-  --popover-border: 20 14% 10%;
+  --popover-border: 215 20% 16%;
 
-  --primary: 9 75% 61%;
+  /* Primary: Vibrant blue for dark mode */
+  --primary: 213 94% 60%;
 
-  --primary-foreground: 0 0% 100%;
+  --primary-foreground: 215 25% 8%;
 
-  --secondary: 30 15% 52%;
+  /* Secondary: Blue-gray for dark mode */
+  --secondary: 214 25% 24%;
 
-  --secondary-foreground: 0 0% 100%;
+  --secondary-foreground: 210 20% 94%;
 
-  --muted: 20 14% 15%;
+  /* Muted: Subtle blue-gray backgrounds */
+  --muted: 215 20% 18%;
 
-  --muted-foreground: 45 15% 46%;
+  --muted-foreground: 214 15% 65%;
 
-  --accent: 25 45% 20%;
+  /* Accent: Deep blue for highlights */
+  --accent: 213 75% 22%;
 
-  --accent-foreground: 45 25% 85%;
+  --accent-foreground: 213 85% 80%;
 
   --destructive: 356.3033 90.5579% 54.3137%;
 
   --destructive-foreground: 0 0% 100%;
 
-  --input: 20 14% 18%;
-  --ring: 9 75% 61%;
-  --chart-1: 203.8863 88.2845% 53.1373%;
-  --chart-2: 159.7826 100% 36.0784%;
-  --chart-3: 42.0290 92.8251% 56.2745%;
-  --chart-4: 147.1429 78.5047% 41.9608%;
-  --chart-5: 341.4894 75.2000% 50.9804%;
+  --input: 215 20% 20%;
+  /* Ring: Bright blue focus for dark mode */
+  --ring: 213 94% 60%;
+  /* Charts: Brighter variants for dark mode visibility */
+  --chart-1: 213 94% 60%;  /* Primary blue */
+  --chart-2: 200 95% 55%;  /* Cyan */
+  --chart-3: 160 85% 50%;  /* Teal */
+  --chart-4: 265 85% 65%;  /* Purple */
+  --chart-5: 340 75% 60%;  /* Pink accent */
 
-  --shadow-2xs: 0px 2px 0px 0px hsl(9 75% 61% / 0.00);
-  --shadow-xs: 0px 2px 0px 0px hsl(9 75% 61% / 0.00);
-  --shadow-sm: 0px 2px 0px 0px hsl(9 75% 61% / 0.00), 0px 1px 2px -1px hsl(9 75% 61% / 0.00);
-  --shadow: 0px 2px 0px 0px hsl(9 75% 61% / 0.00), 0px 1px 2px -1px hsl(9 75% 61% / 0.00);
-  --shadow-md: 0px 2px 0px 0px hsl(9 75% 61% / 0.00), 0px 2px 4px -1px hsl(9 75% 61% / 0.00);
-  --shadow-lg: 0px 2px 0px 0px hsl(9 75% 61% / 0.00), 0px 4px 6px -1px hsl(9 75% 61% / 0.00);
-  --shadow-xl: 0px 2px 0px 0px hsl(9 75% 61% / 0.00), 0px 8px 10px -1px hsl(9 75% 61% / 0.00);
-  --shadow-2xl: 0px 2px 0px 0px hsl(9 75% 61% / 0.00);
+  /* Dark mode shadows with deeper depth */
+  --shadow-2xs: 0px 1px 2px 0px hsl(215, 80%, 5% / 0.15);
+  --shadow-xs: 0px 1px 3px 0px hsl(215, 80%, 5% / 0.20);
+  --shadow-sm: 0px 2px 4px 0px hsl(215, 80%, 5% / 0.18), 0px 1px 2px -1px hsl(215, 80%, 5% / 0.12);
+  --shadow: 0px 4px 6px -1px hsl(215, 80%, 5% / 0.22), 0px 2px 4px -1px hsl(215, 80%, 5% / 0.15);
+  --shadow-md: 0px 6px 12px -2px hsl(215, 80%, 5% / 0.28), 0px 3px 7px -3px hsl(215, 80%, 5% / 0.18);
+  --shadow-lg: 0px 10px 20px -5px hsl(215, 80%, 5% / 0.35), 0px 6px 10px -5px hsl(215, 80%, 5% / 0.22);
+  --shadow-xl: 0px 20px 25px -5px hsl(215, 80%, 5% / 0.40), 0px 10px 15px -5px hsl(215, 80%, 5% / 0.28);
+  --shadow-2xl: 0px 25px 50px -12px hsl(215, 80%, 5% / 0.50);
 
   /* Fallback for older browsers */
   --sidebar-primary-border: hsl(var(--sidebar-primary));

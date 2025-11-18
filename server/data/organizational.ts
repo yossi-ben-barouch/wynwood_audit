@@ -1,0 +1,74 @@
+import type { OrganizationalData } from "@shared/schema";
+
+export const organizationalData: OrganizationalData = {
+  teamMembers: [
+    {
+      id: "daniel-pezet",
+      name: "Daniel Pezet",
+      role: "Operations Director",
+      department: "Operations & Product",
+      description: [
+        "Oversees shop operations and product development",
+        "Manages 2,500 SKU inventory across multiple categories",
+        "Handles supplier relationships across 15 production categories",
+        "Compensation tied to sales performance",
+      ],
+      strengths: [
+        "Operations Management",
+        "Supplier Relations",
+        "Product Development",
+      ],
+      challenges: ["Scaling to match potential demand"],
+    },
+    {
+      id: "alejandro-trujillo",
+      name: "Alejandro Trujillo",
+      role: "E-Commerce Director",
+      department: "Digital Commerce",
+      description: [
+        "Manages entire digital ecosystem: Shop, Museum, Gallery, and Goldman Properties sites",
+        "Shopify Plus expert with HTML, CSS, JavaScript, and AI/automation skills",
+        "Handles Google Ads, SEO, product data optimization",
+        "Working in isolation with minimal support",
+      ],
+      strengths: ["Technical Proficiency", "Problem Solving", "Adaptability"],
+      challenges: [
+        "Stretched across 4 properties",
+        "No delegation or SOPs",
+        "Limited strategic marketing depth",
+      ],
+    },
+    {
+      id: "nicole-deaguiar",
+      name: "Nicole DeAguiar",
+      role: "Marketing Director",
+      department: "Marketing & PR",
+      description: [
+        "Started July 2024 (relatively new to organization)",
+        "Manages PR, social media, email campaigns, influencer partnerships",
+        "$2,000/month total PR retainer ($1,000 for shop)",
+        "Currently lacks dedicated social media support",
+      ],
+      strengths: ["PR Management", "Creative Strategy", "Influencer Relations"],
+    },
+    {
+      id: "laura-rodriguez",
+      name: "Laura Rodriguez",
+      role: "Operations Manager",
+      department: "Operations",
+      description: [
+        "Daniel's right hand for 5 years",
+        "Manages fulfillment operations and product coordination",
+        "Oversees Rebecca (fulfillment specialist)",
+        "Deep institutional knowledge",
+      ],
+      strengths: ["Fulfillment Management", "Operational Excellence"],
+    },
+  ],
+  reportingIssues: [
+    "Alejandro reports to Daniel but needs closer collaboration with Nicole (marketing)",
+    "Current structure creates silos between technical execution and creative marketing",
+    "No dedicated e-commerce strategy role above operational level",
+    "Marketing team lacks social media specialist despite 400K email list",
+  ],
+};

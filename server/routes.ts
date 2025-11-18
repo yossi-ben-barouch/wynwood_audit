@@ -2,6 +2,8 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { auditData } from "./data/audit-data";
+import { promotionAudit } from "./data/promotion-audit";
+import { platformReviewData } from "./data/Audit/platform-review";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Audit Data API Routes
@@ -34,6 +36,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Marketing Strategy
   app.get("/api/marketing-strategy", (_req, res) => {
     res.json(auditData.marketingStrategy);
+  });
+
+  // Promotion Audit (Promotion Review page data)
+  app.get("/api/promotion-audit", (_req, res) => {
+    res.json(promotionAudit);
+  });
+
+  // Platform Review
+  app.get("/api/platform-review", (_req, res) => {
+    res.json(platformReviewData);
   });
 
   // Team Reviews

@@ -89,6 +89,58 @@ export interface Workstream {
   kpis?: string[];
 }
 
+export interface StrategyPlay {
+  title: string;
+  timeframe: string;
+  owners: string[];
+  objectives: string[];
+  tasks: string[];
+  dependencies?: string[];
+  successSignals?: string[];
+}
+
+export interface StrategyEnablement {
+  title: string;
+  description: string;
+  items: string[];
+}
+
+export interface StrategyExperiment {
+  title: string;
+  hypothesis: string;
+  steps: string[];
+  owner: string;
+}
+
+export interface StrategySection {
+  id: string;
+  title: string;
+  description: string;
+  focusPoints: string[];
+  plays: StrategyPlay[];
+  enablement?: StrategyEnablement[];
+  experiments?: StrategyExperiment[];
+  strategyDetails?: any;
+}
+
+export interface StrategyCadence {
+  horizon: string;
+  focus: string;
+  parallelStreams: string[];
+}
+
+export interface MarketingStrategy {
+  overview: {
+    narrative: string;
+    guidingPrinciples: string[];
+    guardrails: string[];
+  };
+  objectives: string[];
+  kpis: KPIMetric[];
+  sections: StrategySection[];
+  cadence: StrategyCadence[];
+}
+
 export interface CompetencyAssessment {
   area: string;
   rating: number; // 1-5
@@ -136,14 +188,6 @@ export interface AuditData {
   currentState: CurrentStateData;
   problems: Problem[];
   recommendations: Recommendation[];
-  marketingStrategy: {
-    objectives: string[];
-    kpis: KPIMetric[];
-    workstreams: Workstream[];
-    timeline: {
-      week: string;
-      milestones: string[];
-    }[];
-  };
+  marketingStrategy: MarketingStrategy;
   teamReviews: TeamReview[];
 }

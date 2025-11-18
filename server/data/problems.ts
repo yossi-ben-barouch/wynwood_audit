@@ -1,0 +1,112 @@
+import type { Problem } from "@shared/schema";
+
+export const problemsData: Problem[] = [
+  {
+    id: "resource-crisis",
+    title: "Resource Allocation & Strategic Planning",
+    category: "resource",
+    severity: "critical",
+    description:
+      "Absence of strategic activity planning combined with Alejandro manually managing other web-related activities (Museum website coordination, Gallery, and Goldman Properties sites) creates a lack of clear organizational focus and multi-role execution plan.",
+    symptoms: [
+      "No defined strategic roadmap or prioritization framework",
+      "Alejandro managing 4 separate websites (Shop, Museum, Gallery, Goldman Properties) without role clarity",
+      "Manual execution of tactical tasks (2,500 SKU data entry, Google Ads across multiple businesses)",
+      "No delegation structure or standard operating procedures",
+      "Reactive firefighting instead of proactive strategic planning",
+      "Multi-role responsibilities without defined execution plan or success metrics",
+    ],
+    impact:
+      "Without strategic planning and clear role definition, resources are scattered across competing priorities, preventing focused execution on revenue-driving initiatives and creating organizational inefficiency",
+  },
+  {
+    id: "marketing-disconnect",
+    title: "Insufficient Marketing & E-Commerce Strategic Alignment",
+    category: "strategy",
+    severity: "high",
+    description:
+      "Previous marketing personnel operated without deep coordination with e-commerce operations. While Nicole (new marketing lead) is now more hands-on with e-commerce, deeper strategic planning and coordination is needed around brand positioning, product strategy, launch coordination, and information flow.",
+    symptoms: [
+      "Historical lack of collaboration between marketing and e-commerce teams",
+      "Product launches executed without coordinated marketing strategy",
+      "No unified brand positioning across channels",
+      "Insufficient product information and storytelling in marketing materials",
+      "Launch timing misaligned between product availability and campaign readiness",
+      "Limited cross-functional planning on product strategy, pricing, and positioning",
+    ],
+    impact:
+      "Missed revenue opportunities, inconsistent brand messaging, suboptimal product positioning, and inefficient marketing spend due to lack of strategic coordination on brand, products, and launch strategies",
+  },
+  {
+    id: "product-data-quality",
+    title: "Product Feed & Marketplace Integration",
+    category: "technical",
+    severity: "high",
+    description:
+      "Need to consolidate product feeds in Google Merchant Center, integrate Etsy and eBay marketplace feeds, and standardize product data using a recommended template to ensure all fields are properly populated.",
+    symptoms: [
+      "Multiple product feeds in Google Merchant Center instead of consolidated single feed",
+      "Etsy and eBay marketplaces not connected via feed integration",
+      "Inconsistent product data fields across different systems",
+      "Product template not standardized (missing or incomplete fields)",
+      "Manual product updates required across multiple channels",
+      "No automated feed syndication to new marketplaces",
+    ],
+    impact:
+      "Limited marketplace presence, manual data management overhead, and missed revenue opportunities from Etsy and eBay channels",
+  },
+  {
+    id: "museum-shop-synergy",
+    title: "Untapped Museum-Shop Synergy & Integration",
+    category: "operational",
+    severity: "high",
+    description:
+      "Museum website (250K monthly visitors, high domain authority) and shop operate independently, missing significant opportunity to leverage audience, cross-promote, and integrate shop seamlessly into museum experience.",
+    symptoms: [
+      "Museum website (DR 72, 22K+ backlinks) not driving shop traffic",
+      "Artist pages ranking #1-2 for relevant keywords but not showcasing or linking to artist products",
+      "No cross-retargeting between museum visitors and shop audiences",
+      "Shop not integrated into artist pages or blog/news content",
+      "Museum traffic not monetized through shop recommendations or integrations",
+      "Missed opportunity for shared SEO authority and keyword ranking",
+    ],
+    impact:
+      "Significant untapped revenue from museum audience, lost organic traffic through high-authority artist pages, and missed cross-selling opportunities through seamless museum-shop integration",
+  },
+  {
+    id: "google-ads-structure",
+    title: "Google Ads Structure Inefficiency",
+    category: "technical",
+    severity: "medium",
+    description:
+      "Google Ads account poorly structured for granular control and optimization.",
+    symptoms: [
+      "Only 4-5 campaigns (should be 200+ ad groups)",
+      "Overusing Performance Max (should be Shopping + PMax remarketing)",
+      "Search campaigns for remarketing (backwards)",
+      "No granular product-level campaigns",
+      "Broad match keywords draining budget",
+      "Ranking #1 for 'Super Plastic' but no inventory",
+    ],
+    impact:
+      "Paying for clicks that can't convert, unable to optimize at product level, and wasting 30-40% of ad spend on irrelevant traffic",
+  },
+  {
+    id: "automation-gaps",
+    title: "Manual Processes Preventing Scale",
+    category: "operational",
+    severity: "medium",
+    description:
+      "Critical workflows being done manually, limiting scalability and creating bottlenecks.",
+    symptoms: [
+      "Product data entry one-by-one (not bulk)",
+      "SEO optimization per product manually",
+      "Google Ads keyword research manual",
+      "Amazon listing creation manual",
+      "Price monitoring vs. competitors manual",
+      "No automated feed optimization",
+    ],
+    impact:
+      "Time-consuming workflows prevent scaling to full catalog potential across marketplaces, limiting revenue growth",
+  },
+];
