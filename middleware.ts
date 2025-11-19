@@ -23,7 +23,7 @@ function isAuthorized(request: Request): boolean {
   return user === BASIC_USER && pass === BASIC_PASS;
 }
 
-export default function middleware(request: Request) {
+export function middleware(request: Request) {
   const url = new URL(request.url);
 
   // Let static assets & some public files through
@@ -48,3 +48,14 @@ export default function middleware(request: Request) {
     },
   });
 }
+
+export const config = {
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - assets (Vite build output)
+     * - favicon
+     */
+    "/((?!assets|favicon).*)",
+  ],
+};
