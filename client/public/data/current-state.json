@@ -1,0 +1,170 @@
+{
+  "platforms": [
+    {
+      "name": "Lightspeed",
+      "type": "POS",
+      "description": "Primary point of sale system - 95% of sales are on-site"
+    },
+    {
+      "name": "Shopify",
+      "type": "E-Commerce",
+      "description": "Online store platform (migrated ~3 years ago)"
+    },
+    {
+      "name": "Mailchimp",
+      "type": "Email",
+      "description": "Email marketing platform with 400K contacts",
+      "cost": "$2,500/month"
+    },
+    {
+      "name": "Google Analytics",
+      "type": "Analytics",
+      "description": "Traffic and behavior tracking across properties"
+    },
+    {
+      "name": "SEMrush",
+      "type": "SEO",
+      "description": "SEO and competitive analysis tool",
+      "cost": "$350/month"
+    },
+    {
+      "name": "Zola",
+      "type": "Ticketing",
+      "description": "Museum ticket sales platform"
+    },
+    {
+      "name": "Art Cloud",
+      "type": "Gallery",
+      "description": "Gallery art sales management"
+    }
+  ],
+  "trafficMetrics": [
+    {
+      "source": "Museum Website",
+      "value": 250000,
+      "change": 12,
+      "description": "High conversion potential"
+    },
+    {
+      "source": "Shop Direct",
+      "value": 45000,
+      "change": -10,
+      "description": "Artist collaborations"
+    },
+    {
+      "source": "Google Ads",
+      "value": 35000,
+      "change": 33,
+      "description": "Primary paid channel"
+    },
+    {
+      "source": "Organic Search",
+      "value": 28000,
+      "change": 15,
+      "description": "Strong SEO rankings"
+    },
+    {
+      "source": "Social Media",
+      "value": 12000,
+      "change": 8,
+      "description": "Growing but underperforming"
+    }
+  ],
+  "conversionMetrics": [
+    {
+      "label": "Site Conversion Rate",
+      "value": "0.8%",
+      "trend": -15,
+      "trendDirection": "down",
+      "suffix": "%"
+    },
+    {
+      "label": "Domain Authority (Ahrefs)",
+      "value": "72",
+      "trend": 8,
+      "trendDirection": "up"
+    },
+    {
+      "label": "Average Order Value",
+      "value": "$95",
+      "trend": -5,
+      "trendDirection": "down"
+    }
+  ],
+  "productCategories": [
+    {
+      "name": "Third-party Collectibles",
+      "skuCount": 875,
+      "margin": "50-60%",
+      "description": "Super Plastic, Bear Bricks, Kidrobot",
+      "status": "Supplier instability - Super Plastic closed"
+    },
+    {
+      "name": "Artist-Designed Products",
+      "skuCount": 1000,
+      "margin": "60-70%",
+      "description": "Books, notebooks, apparel, accessories",
+      "status": "Higher margins, limited quantities"
+    },
+    {
+      "name": "Stationery & Small Goods",
+      "skuCount": 625,
+      "margin": "30-40%",
+      "description": "Stickers, magnets, keychains",
+      "status": "Low margins, high competition"
+    }
+  ],
+  "marketingChannels": [
+    {
+      "channel": "Google Ads",
+      "budget": "$3,000/month",
+      "performance": "2X ROAS after account separation, 33% growth",
+      "issues": [
+        "Only 4-5 campaigns (needs 200+ ad groups)",
+        "Performance Max overuse",
+        "Broad match keywords draining budget"
+      ]
+    },
+    {
+      "channel": "Meta/Facebook Ads",
+      "budget": "$900/month",
+      "performance": "Growing but still underperforming",
+      "issues": [
+        "Generic campaigns",
+        "Not product-specific",
+        "Recent account verification needed"
+      ]
+    },
+    {
+      "channel": "Email Marketing (Mailchimp)",
+      "budget": "$2,500/month + $1,000 consultant",
+      "performance": "350K-400K list at ceiling, stagnant engagement",
+      "issues": [
+        "No sales conversion",
+        "Monthly sends only",
+        "No automation flows",
+        "No segmentation"
+      ]
+    },
+    {
+      "channel": "SEO",
+      "budget": "Organic",
+      "performance": "Ranking #1-2 for multiple collectible brands",
+      "issues": [
+        "Ranking for out-of-stock products",
+        "Museum traffic not leveraged"
+      ]
+    },
+    {
+      "channel": "Social Media",
+      "budget": "Limited",
+      "performance": "8K followers (shop), 100K+ (museum)",
+      "issues": [
+        "Promotion-heavy",
+        "Lacking storytelling",
+        "No TikTok presence",
+        "No live shopping"
+      ]
+    }
+  ]
+}

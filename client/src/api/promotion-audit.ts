@@ -32,11 +32,21 @@ export interface PromotionAudit {
       subscribers: string;
       notes: string[];
     };
-    diagnosis: Array<{ issue: string; symptom: string; impact: string; fix: string }>;
+    diagnosis: Array<{
+      issue: string;
+      symptom: string;
+      impact: string;
+      fix: string;
+    }>;
     migration: {
       recommendedTool: string;
       rationale: string[];
-      projections: { monthlyCost: string; ctr: string; cvr: string; revenueShare: string };
+      projections: {
+        monthlyCost: string;
+        ctr: string;
+        cvr: string;
+        revenueShare: string;
+      };
     };
     segmentation: { phase1Cleanup: string[]; phase2Rebuild: string[] };
     automations: string[];
@@ -70,7 +80,13 @@ export interface PromotionAudit {
       owner: string;
       impact: string;
       timeline: string;
-      media?: Array<{ src: string; alt: string; title: string; description?: string; badge?: string }>;
+      media?: Array<{
+        src: string;
+        alt: string;
+        title: string;
+        description?: string;
+        badge?: string;
+      }>;
     };
     contentStrategy: {
       badge: string;
@@ -81,10 +97,30 @@ export interface PromotionAudit {
       owner: string;
       impact: string;
       timeline: string;
-      media?: Array<{ src: string; alt: string; title: string; description?: string; badge?: string }>;
+      media?: Array<{
+        src: string;
+        alt: string;
+        title: string;
+        description?: string;
+        badge?: string;
+      }>;
     };
-    pressLinks: { badge: string; description: string; bullets: string[]; owner: string; impact: string; timeline: string };
-    seasonal: { badge: string; description: string; bullets: string[]; owner: string; impact: string; timeline: string };
+    pressLinks: {
+      badge: string;
+      description: string;
+      bullets: string[];
+      owner: string;
+      impact: string;
+      timeline: string;
+    };
+    seasonal: {
+      badge: string;
+      description: string;
+      bullets: string[];
+      owner: string;
+      impact: string;
+      timeline: string;
+    };
     roadmap90d: { badge: string; description: string; steps: string[] };
     outcomes: { badge: string; description: string; bullets: string[] };
   };
@@ -99,7 +135,13 @@ export interface PromotionAudit {
       owner: string;
       impact: string;
       timeline: string;
-      media?: Array<{ src: string; alt: string; title: string; description?: string; badge?: string }>;
+      media?: Array<{
+        src: string;
+        alt: string;
+        title: string;
+        description?: string;
+        badge?: string;
+      }>;
     };
     feedOptimization: {
       badge: string;
@@ -110,7 +152,13 @@ export interface PromotionAudit {
       owner: string;
       impact: string;
       timeline: string;
-      media?: Array<{ src: string; alt: string; title: string; description?: string; badge?: string }>;
+      media?: Array<{
+        src: string;
+        alt: string;
+        title: string;
+        description?: string;
+        badge?: string;
+      }>;
     };
     campaignStructure: {
       badge: string;
@@ -121,7 +169,13 @@ export interface PromotionAudit {
       owner: string;
       impact: string;
       timeline: string;
-      media?: Array<{ src: string; alt: string; title: string; description?: string; badge?: string }>;
+      media?: Array<{
+        src: string;
+        alt: string;
+        title: string;
+        description?: string;
+        badge?: string;
+      }>;
     };
     metaAds: {
       badge: string;
@@ -131,7 +185,13 @@ export interface PromotionAudit {
       owner: string;
       impact: string;
       timeline: string;
-      media?: Array<{ src: string; alt: string; title: string; description?: string; badge?: string }>;
+      media?: Array<{
+        src: string;
+        alt: string;
+        title: string;
+        description?: string;
+        badge?: string;
+      }>;
     };
     amazonAds: {
       badge: string;
@@ -142,18 +202,73 @@ export interface PromotionAudit {
       owner: string;
       impact: string;
       timeline: string;
-      media?: Array<{ src: string; alt: string; title: string; description?: string; badge?: string }>;
+      media?: Array<{
+        src: string;
+        alt: string;
+        title: string;
+        description?: string;
+        badge?: string;
+      }>;
     };
-    actionPlan14d: { badge: string; title: string; description: string; steps: string[] };
+    actionPlan14d: {
+      badge: string;
+      title: string;
+      description: string;
+      steps: string[];
+    };
   };
   social?: {
-    snapshot: { badge: string; title: string; description: string; platforms: string[] };
-    keyGaps: { badge: string; title: string; gaps: Array<{ issue: string; description: string; impact: string; owner: string }> };
-    positioning: { badge: string; title: string; description: string; pillars: string[]; action: string };
-    platformStrategy: { badge: string; title: string; platforms: Array<{ name: string; shift: string; tactics: string[] }> };
-    creators: { badge: string; title: string; description: string; focus: string[] };
-    dropOperatingSystem: { badge: string; title: string; description: string; timeline: Array<{ phase: string; actions: string[] }> };
-    execution30_60_90: { badge: string; title: string; phases: Array<{ period: string; owner: string; impact: string; timeline: string; tasks: string[] }> };
+    snapshot: {
+      badge: string;
+      title: string;
+      description: string;
+      platforms: string[];
+    };
+    keyGaps: {
+      badge: string;
+      title: string;
+      gaps: Array<{
+        issue: string;
+        description: string;
+        impact: string;
+        owner: string;
+      }>;
+    };
+    positioning: {
+      badge: string;
+      title: string;
+      description: string;
+      pillars: string[];
+      action: string;
+    };
+    platformStrategy: {
+      badge: string;
+      title: string;
+      platforms: Array<{ name: string; shift: string; tactics: string[] }>;
+    };
+    creators: {
+      badge: string;
+      title: string;
+      description: string;
+      focus: string[];
+    };
+    dropOperatingSystem: {
+      badge: string;
+      title: string;
+      description: string;
+      timeline: Array<{ phase: string; actions: string[] }>;
+    };
+    execution30_60_90: {
+      badge: string;
+      title: string;
+      phases: Array<{
+        period: string;
+        owner: string;
+        impact: string;
+        timeline: string;
+        tasks: string[];
+      }>;
+    };
     kpis: { badge: string; title: string; metrics: string[] };
     status: string;
     findings: string;
@@ -161,15 +276,22 @@ export interface PromotionAudit {
     owner: string;
     evidence: string;
   };
-  marketplaces?: { status: string; findings: string; recommendations: string; owner: string; evidence: string };
+  marketplaces?: {
+    status: string;
+    findings: string;
+    recommendations: string;
+    owner: string;
+    evidence: string;
+  };
 }
 
 export function usePromotionAuditQuery() {
   return useQuery<PromotionAudit>({
-    queryKey: ["/api/promotion-audit"],
+    queryKey: ["/data/promotion-audit"],
     queryFn: async () => {
-      const res = await fetch("/api/promotion-audit");
-      if (!res.ok) throw new Error(`Failed to fetch promotion audit: ${res.status}`);
+      const res = await fetch("/data/promotion-audit.json");
+      if (!res.ok)
+        throw new Error(`Failed to fetch promotion audit: ${res.status}`);
       return res.json();
     },
     staleTime: 60_000,

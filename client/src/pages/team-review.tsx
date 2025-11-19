@@ -26,7 +26,12 @@ export default function TeamReviewPage() {
     error,
     refetch,
   } = useQuery<TeamReview[]>({
-    queryKey: ["/api/team-reviews"],
+    queryKey: ["/data/team-reviews"],
+    queryFn: async () => {
+      const res = await fetch("/data/team-reviews.json");
+      if (!res.ok) throw new Error("Failed to fetch team reviews");
+      return res.json();
+    },
   });
 
   if (isLoading) {

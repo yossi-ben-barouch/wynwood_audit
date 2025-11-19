@@ -1,0 +1,639 @@
+{
+  "summary": {
+    "executive": {
+      "headline": "Promotion Channel Health & Priorities",
+      "description": "Five channels drive promotion revenue. Three are constrained or underperforming; two are emerging opportunities. Fix measurement and content alignment first."
+    },
+    "channels": [
+      {
+        "id": "paid",
+        "name": "Paid Media",
+        "icon": "Target",
+        "status": "Constrained",
+        "statusColor": "destructive",
+        "headline": "Measurement limits scale; creative testing cadence needed.",
+        "findings": [
+          "Conversion tracking incomplete; true ROAS unknown.",
+          "Creative win-rate unclear due to limited test velocity.",
+          "Budget allocation reactive, not predictive."
+        ],
+        "recommendations": [
+          "Fix GA4 eCommerce tracking and conversion actions.",
+          "Establish weekly creative test slate (3–5 variants).",
+          "Scale winners; cut losers by week 2."
+        ],
+        "owner": "Performance Marketing",
+        "impact": "High",
+        "priority": 1
+      },
+      {
+        "id": "seo",
+        "name": "SEO",
+        "icon": "Globe2",
+        "status": "Opportunity",
+        "statusColor": "secondary",
+        "headline": "Leverage museum authority; build content handoff to shop.",
+        "findings": [
+          "Museum site has 10K+ monthly organic sessions; shop gets <500.",
+          "Low TOFU content targeting art terms; poor internal linking.",
+          "Artist pages on museum site don't link to shop products."
+        ],
+        "recommendations": [
+          "Create museum-to-shop pathways with reciprocal internal links.",
+          "Publish gallery posts and link to relevant PDPs.",
+          "Build resource center for street art education + buyer guides."
+        ],
+        "owner": "SEO & Content",
+        "impact": "Medium–High",
+        "priority": 2
+      },
+      {
+        "id": "email",
+        "name": "Email/CRM",
+        "icon": "Mail",
+        "status": "Waste",
+        "statusColor": "destructive",
+        "headline": "Reduce spend leakage; align flows with capsule launches.",
+        "findings": [
+          "Mailchimp spend ($2,500/mo) vs. revenue share (negligible).",
+          "Flows not aligned to product drops; engagement declining.",
+          "List hygiene poor; 40%+ inactive subscribers."
+        ],
+        "recommendations": [
+          "Migrate to Klaviyo for Shopify-native data sync.",
+          "Rebuild flows around 90-day capsule launches.",
+          "Implement segmentation by artist affinity and purchase history."
+        ],
+        "owner": "CRM & Lifecycle",
+        "impact": "High",
+        "priority": 1
+      },
+      {
+        "id": "social",
+        "name": "Social",
+        "icon": "Share2",
+        "status": "Emerging",
+        "statusColor": "secondary",
+        "headline": "Build capsule narratives; seed creators and UGC.",
+        "findings": [
+          "Instagram-first (6.1K followers); TikTok, YouTube, Pinterest missed.",
+          "Content promotion-heavy; artist storytelling underplayed.",
+          "No structured warm-up calendar for drops; reactive launches."
+        ],
+        "recommendations": [
+          "Shift to engagement formats (Reels, Lives, Stories).",
+          "Activate 5–10 micro-creators with trackable codes.",
+          "Run 90-day hype SOP for every collaboration drop."
+        ],
+        "owner": "Social & Content",
+        "impact": "Medium",
+        "priority": 3
+      },
+      {
+        "id": "marketplaces",
+        "name": "Marketplaces",
+        "icon": "Store",
+        "status": "Planned",
+        "statusColor": "secondary",
+        "headline": "Launch curated SKUs; ensure schema and imagery meet platform best practices.",
+        "findings": [
+          "Assortment not yet live on Etsy, Amazon, eBay.",
+          "Listing readiness high for apparel; low for home decor.",
+          "Potential: $20–30K GMV in first 90 days."
+        ],
+        "recommendations": [
+          "Launch 400–600 curated SKUs across channels.",
+          "Ensure schema markup and imagery meet platform specs.",
+          "Build daily exception monitoring for inventory drift."
+        ],
+        "owner": "Marketplace Ops",
+        "impact": "Medium",
+        "priority": 2
+      }
+    ],
+    "keyInsights": [
+      {
+        "title": "Measurement is the bottleneck",
+        "description": "We're spending money on ads and email but don't know what's actually working. Right now, we can't tell if a dollar spent on Google Ads generates $3 or $0.50 in revenue. Until we fix this, we're flying blind—we can't confidently scale what works or cut what doesn't."
+      },
+      {
+        "title": "Content alignment drives revenue",
+        "description": "When we launch a new product drop, our email, social, and SEO teams aren't coordinated. This means customers see mixed messages, and we miss the peak interest window. Imagine launching a product but only telling some customers about it—that's what's happening now. Coordinating around a 90-day calendar could easily add 20–30% to revenue per launch."
+      },
+      {
+        "title": "Museum site is underutilized",
+        "description": "Our museum website gets 10,000+ visitors every month who are interested in art and culture. Almost none of them know we have a shop. It's like having a busy art gallery next door but no sign pointing to our store. By linking the museum content to shop products, we could triple traffic to the shop with zero additional ad spend."
+      },
+      {
+        "title": "Creator economy is untapped",
+        "description": "Right now, we occasionally work with artists and influencers, but there's no system. Imagine if we had 5–10 micro-influencers consistently sharing our products with their audiences (who are exactly our target customers). With trackable promo codes, we'd know exactly which creators drive sales. This could become 20–30% of our social revenue."
+      }
+    ]
+  },
+  "email": {
+    "meta": {
+      "preparedFor": "The Wynwood Walls Shop",
+      "preparedBy": "Yossi Ben Barouch (MyWebExperts)",
+      "date": "November 2025",
+      "status": "Underperforming"
+    },
+    "overview": {
+      "tool": "Mailchimp Enterprise",
+      "monthlyCost": "~$2,500",
+      "subscribers": "~350,000",
+      "notes": [
+        "Extremely low CTR; negligible revenue (e.g., Nov 1 campaign: 3 orders, none for featured product).",
+        "Rising bounces and list fatigue; lack of hygiene and engagement segmentation.",
+        "Automation logic flaws (e.g., premature removal), likely hurting upsell/repeat.",
+        "Deliverability likely degraded due to list quality and engagement issues.",
+        "Consultant at $1,000/mo with limited ROI and no sales growth."
+      ]
+    },
+    "diagnosis": [
+      {
+        "issue": "Platform misalignment",
+        "symptom": "Mailchimp not optimized for Shopify",
+        "impact": "High cost, weak ROI",
+        "fix": "Migrate to Klaviyo (Shopify-native)."
+      },
+      {
+        "issue": "List hygiene",
+        "symptom": "Rising bounces, no cleanup automation",
+        "impact": "Damaged sender reputation; lower inbox rates",
+        "fix": "Immediate scrubbing + automated suppression."
+      },
+      {
+        "issue": "Segmentation",
+        "symptom": "One-size-fits-all campaigns",
+        "impact": "Low engagement, irrelevant content",
+        "fix": "Dynamic segments by behavior, purchases, lifecycle stage."
+      },
+      {
+        "issue": "Automation logic",
+        "symptom": "Flows remove contacts too early",
+        "impact": "Lost upsell and repeat potential",
+        "fix": "Redesign conditions & delays."
+      },
+      {
+        "issue": "Content & CTAs",
+        "symptom": "Product mismatch, unclear hierarchy",
+        "impact": "Low CTR and conversion",
+        "fix": "Modular templates; A/B test subjects, CTAs, layouts."
+      },
+      {
+        "issue": "Analytics blind spots",
+        "symptom": "No accurate revenue attribution",
+        "impact": "Can't assess ROI",
+        "fix": "UTMs + GA4 e‑commerce + CRM revenue tagging."
+      }
+    ],
+    "migration": {
+      "recommendedTool": "Klaviyo",
+      "rationale": [
+        "Shopify-native integration (real-time orders, browsing, product data).",
+        "Advanced segmentation by artist/category/product.",
+        "Cost savings up to ~$1,000/month.",
+        "Automation library for welcome, browse abandon, post-purchase, win-back."
+      ],
+      "projections": {
+        "monthlyCost": "$2,500 → $1,200–$1,500",
+        "ctr": "<1% → 3–6%",
+        "cvr": "0.03% → 0.3–1.0%",
+        "revenueShare": "Negligible → 2–7% of online revenue"
+      }
+    },
+    "segmentation": {
+      "phase1Cleanup": [
+        "Suppress bounced/invalid emails and non‑engagers (last 10 campaigns).",
+        "Automate bounce removal going forward.",
+        "Validate form sources (ticketing, Wi‑Fi, in‑store, API)."
+      ],
+      "phase2Rebuild": [
+        "High‑Value (2+ orders, AOV > $100) — VIP early access.",
+        "Recent Visitors (viewed, no purchase) — browse re‑engagement.",
+        "First‑Time Buyers (no repeat 60d) — upsell/retention.",
+        "Inactive (90+ days) — re‑engage or suppress.",
+        "Product Interest by artist/category — personalized updates."
+      ]
+    },
+    "automations": [
+      "Welcome Series — introduce brand, bestsellers, artist stories.",
+      "Abandoned Cart — recover revenue; time‑bound incentive.",
+      "Post‑Purchase — reviews and complementary recommendations.",
+      "Win‑Back (90d inactive) — re‑engagement offers.",
+      "Product Launch — notify relevant audience by artist/product type.",
+      "Birthday/Anniversary — loyalty and personalization.",
+      "Specialized Artist Drop — teaser → countdown → drop → last chance."
+    ],
+    "creative": {
+      "recommendations": [
+        "Modular templates: hero banner, artist spotlight, dynamic product block (Shopify), strong CTA.",
+        "Seasonal themes: Street Art Holiday Gifts; Artist Drop Spotlight; Wynwood Summer Collection.",
+        "A/B test subject lines, CTA copy, layout hierarchy."
+      ]
+    },
+    "analytics": {
+      "tracking": [
+        "UTMs on all links (utm_source=email&utm_medium=klaviyo&utm_campaign=...).",
+        "GA4 e‑commerce sync; report by campaign, segment, flow."
+      ],
+      "kpis": [
+        "Open Rate",
+        "CTR",
+        "Conversion Rate",
+        "Revenue per Email",
+        "Unsub/Bounce"
+      ]
+    },
+    "plan90d": [
+      "Weeks 1–2: audit/export Mailchimp; identify non‑engagers and bounces.",
+      "Weeks 3–4: migrate to Klaviyo; rebuild Welcome, Abandoned Cart, Post‑Purchase.",
+      "Month 2: implement segmentation, rebuild templates, launch initial campaigns.",
+      "Month 3: layer artist flows; A/B test; optimize timing/frequency; review ROI."
+    ],
+    "outcomes": [
+      "50–60% platform cost reduction.",
+      "3–5x engagement lift (CTR 3–6%).",
+      "5–10% of total online revenue from email.",
+      "Stronger artist‑driven storytelling."
+    ]
+  },
+  "seo": {
+    "performanceSnapshot": {
+      "badge": "Opportunity",
+      "description": "Last 90 days overview and traffic mix",
+      "metrics": [
+        {
+          "label": "Organic Conversions (90d)",
+          "value": "$6,329.33"
+        },
+        {
+          "label": "Revenue Share",
+          "value": "~14%"
+        },
+        {
+          "label": "Brand Share of Clicks",
+          "value": "~50% branded (incl. museum)"
+        }
+      ],
+      "notes": [
+        "Brand terms (incl. museum) and Superplastic drive a large portion of clicks. Non-brand growth is the lever for incremental revenue."
+      ],
+      "mediaNote": "Media: GSC snapshots and revenue export (add when available)"
+    },
+    "oosIssue": {
+      "severity": "Critical",
+      "title": "Issue: Out-of-Stock Pages Deindexed",
+      "description": "OOS PDPs removed from site drop rankings and link equity",
+      "stakeholders": [
+        "When a product sells out, we lose ranking history and discovery traffic. Competitors keep traffic and capture intent."
+      ],
+      "technical": [
+        "Keep PDP live; do not 404/301. Show OOS state with alternatives and \"notify me\".",
+        "Keep canonical URL and include in XML sitemap; use Product schema with availability=OutOfStock.",
+        "Hide from collections only (theme condition), not from the index.",
+        "Link to closest in-stock equivalents and the parent category."
+      ],
+      "owner": "SEO + Dev",
+      "impact": "High",
+      "timeline": "3–5 days"
+    },
+    "categoryHubs": {
+      "badge": "High Leverage",
+      "description": "Turn default Shopify collection pages into content-rich hubs",
+      "components": [
+        "Intro copy with primary KW cluster and internal links.",
+        "Subcategory grid (artists, styles, materials, sizes).",
+        "Featured products + evergreen bestsellers.",
+        "FAQ schema block for category queries.",
+        "Editorial teaser row (latest TOFU/MOFU articles)."
+      ],
+      "owner": "SEO + Content",
+      "impact": "High",
+      "timeline": "2–3 weeks",
+      "media": [
+        {
+          "src": "/media/fashion_mockup_mini_homepage.png",
+          "alt": "Category hub example: Collections Fashion",
+          "title": "Collections → Fashion (example)",
+          "description": "Illustrative layout for a mini homepage: intro copy, subcategories, featured SKUs, FAQs, and editorial teasers.",
+          "badge": "Hub"
+        }
+      ]
+    },
+    "contentStrategy": {
+      "badge": "Roadmap",
+      "description": "Top/middle/bottom funnel content to drive discovery and conversion",
+      "tofu": [
+        "Street art news and culture explainers",
+        "Artist interviews and process stories",
+        "Guides: \"What is streetwear art?\" \"How to style [artist] capsule\""
+      ],
+      "mofu": [
+        "Artist spotlights linking to category hubs and capsules",
+        "Material/fit guides for apparel; size charts and care",
+        "Collection lookbooks with internal links to PDPs"
+      ],
+      "bofu": [
+        "Listicles: 'Best gifts for artsy people', 'Top [artist] tees'",
+        "Searches like '[artist name] + products'",
+        "Landing pages targeting high-intent queries with schema"
+      ],
+      "owner": "Content",
+      "impact": "Medium–High",
+      "timeline": "ongoing",
+      "media": [
+        {
+          "src": "/media/results_for_listical_style_pages.png",
+          "alt": "SERP for gifts for artsy people",
+          "title": "Listicle-style SERP: gifts for artsy people",
+          "description": "Shows dominant formats and angle opportunities for BOFU listicles.",
+          "badge": "SERP"
+        },
+        {
+          "src": "/media/mid-bottom-of-the-funnel-results.png",
+          "alt": "SEMRush mid-bottom funnel volume",
+          "title": "SEMRush: Mid/Bottom-of-funnel volume",
+          "description": "Keyword volumes and difficulty to prioritize BOFU listicles and artist + product targets.",
+          "badge": "Volume"
+        }
+      ]
+    },
+    "pressLinks": {
+      "badge": "Prereq",
+      "description": "Announce collabs and route museum → shop traffic",
+      "bullets": [
+        "Press releases for new collaborations and capsules; outreach to culture/retail media.",
+        "Digital PR (data angles, artist features) to earn links.",
+        "Prominent museum → shop links and content embeds; event recaps linking to products."
+      ],
+      "owner": "PR + SEO",
+      "impact": "Medium",
+      "timeline": "4–6 weeks"
+    },
+    "seasonal": {
+      "badge": "Planner",
+      "description": "Capture seasonal demand with evergreen + timely guides",
+      "bullets": [
+        "Evergreen: gifts for artsy people, streetwear gifts, wall art gifts.",
+        "Seasonal: holiday, Black Friday/Cyber Monday, Valentine’s, Father’s/Mother’s Day.",
+        "Artist-specific gift guides for high-intent searchers."
+      ],
+      "owner": "Content + SEO",
+      "impact": "Medium",
+      "timeline": "seasonal"
+    },
+    "roadmap90d": {
+      "badge": "Execution",
+      "description": "Sequenced plan for impact and accountability",
+      "steps": [
+        "Fix OOS handling (keep PDPs live, schema, back-in-stock, internal links).",
+        "Stand up 3 category hubs (e.g., Apparel, Books, Figures) with content blocks.",
+        "Publish 4 TOFU, 3 MOFU, 3 BOFU pieces; interlink to hubs and PDPs.",
+        "Launch PR cycle for new collab; secure 5–10 earned links.",
+        "Ship 2 evergreen gift guides; outline seasonal calendar.",
+        "Review GSC for non-brand growth; iterate title/meta and internal links."
+      ]
+    },
+    "outcomes": {
+      "badge": "Targets",
+      "description": "Cost, engagement, and revenue improvements",
+      "bullets": [
+        "50–60% reduction in platform cost.",
+        "3–5x improvement in engagement (CTR 3–6%).",
+        "5–10% of total online revenue from email.",
+        "Stronger artist‑driven storytelling and visual impact."
+      ]
+    }
+  },
+  "paid": {
+    "conversionIssue": {
+      "severity": "Critical",
+      "title": "Critical Issue: Mixed Conversion Goals",
+      "description": "Page views, add_to_cart, and purchases were all set as primary conversions with default values.",
+      "explanation": "This teaches Google to chase cheap micro-actions instead of revenue, depressing Target ROAS and masking true performance.",
+      "stakeholders": "We've been paying for the wrong success signals. Ads think a page view is a \"win,\" so budgets don't prioritize real buyers.",
+      "technical": [
+        "Keep only purchase as primary (dynamic value).",
+        "Mark page_view, add_to_cart, begin_checkout as secondary (observe-only) or remove from bidding.",
+        "Reset strategy learning windows where conversion definition changed."
+      ],
+      "owner": "Performance",
+      "impact": "High",
+      "timeline": "1–2 days",
+      "media": [
+        {
+          "src": "/media/conversions_issues.png",
+          "alt": "Before: mixed conversion goals",
+          "title": "Before: Mixed conversion goals inflating values",
+          "description": "Multiple primary conversions (page view, add to cart, purchase) with default values mislead bidding and depress ROAS.",
+          "badge": "Issue"
+        },
+        {
+          "src": "/media/conversion_pixel_issue.png",
+          "alt": "After: corrected conversion settings",
+          "title": "After: Correct conversion setup",
+          "description": "Assist events set to Secondary and values removed. Only Purchase remains Primary with dynamic value.",
+          "badge": "Implemented"
+        }
+      ]
+    },
+    "feedOptimization": {
+      "badge": "High Leverage",
+      "title": "Feed Optimization: Titles & Attributes",
+      "description": "Shopify-facing titles don't maximize Shopping query relevance.",
+      "explanation": "Shopping performance hinges on query-match and data richness. Add missing attributes and keyword context to win more auctions at lower CPCs.",
+      "actions": [
+        "Add channel-specific fields (google_title, amazon_title, etsy_title).",
+        "Use title template: [Artist/Brand] [Product Type] – [Material/Style] [Color] [Size]",
+        "Enrich GTIN/brand, Google category, MPN; fix price/availability parity."
+      ],
+      "owner": "Ecom Ops",
+      "impact": "High",
+      "timeline": "5–7 days",
+      "media": [
+        {
+          "src": "/media/duplicate_datafeed_product_sources.png",
+          "alt": "Duplicate product sources in feed",
+          "title": "Duplicate product sources in data feed",
+          "description": "Illustrates overlapping sources that can create mismatches in availability/price or duplicate items.",
+          "badge": "Reference"
+        },
+        {
+          "src": "/media/specilized_keyword_maximized_titles.png",
+          "alt": "Specialized keyword-maximized titles",
+          "title": "Specialized keyword-maximized titles (example)",
+          "description": "Channel-optimized title patterns to lift Shopping query relevance and CTR.",
+          "badge": "Template"
+        }
+      ]
+    },
+    "campaignStructure": {
+      "badge": "Roadmap",
+      "title": "Campaign Structure: Control & Scale",
+      "description": "Current structure is too simple; lacks control and signal isolation.",
+      "architecture": [
+        "PMax split by category/intent tiers (e.g., Apparel, Books, Figures; Prospecting vs. Remarketing).",
+        "Shopping campaigns with single-product ad groups (SPAG) for top SKUs to control negatives and budgets.",
+        "Search campaigns only for discovery/long-tail support; brand vs. non-brand split."
+      ],
+      "cadence": [
+        "Creative/test slate every week (5–10 variants); 7-day read.",
+        "Scale winners; rotate 20–30% of budget to tests.",
+        "Query/product report review; add negatives; reallocate to ROAS winners."
+      ],
+      "owner": "Performance",
+      "impact": "Medium–High",
+      "timeline": "7–14 days",
+      "media": [
+        {
+          "src": "/media/example_of_fashion_hats_shopping_campaign_SingleAdgroupProduct.png",
+          "alt": "Shopping Fashion Hats SPAG example",
+          "title": "Shopping campaign: Fashion → Hats (SPAG)",
+          "description": "Each ad group targets a single product to control negatives, bids, and budgets precisely.",
+          "badge": "Structure"
+        }
+      ]
+    },
+    "metaAds": {
+      "badge": "Underutilized",
+      "title": "Meta/Facebook Ads",
+      "description": "Budget ~$900/mo; generic campaigns; product feed only.",
+      "recommendations": [
+        "Campaign layers: Prospecting (creatives by capsule/artist), Retargeting (catalog + UGC), Loyalty (LTV offers).",
+        "Creative cadence: weekly tests (hooks, formats, UGC, motion); keep 2–3 evergreen winners live.",
+        "Amplify product feed with lifestyle creatives; test Advantage+ Shopping where applicable."
+      ],
+      "owner": "Social + Performance",
+      "impact": "Medium",
+      "timeline": "7 days",
+      "media": [
+        {
+          "src": "/media/example_of_multi_angle_multi_creative_testing_on_meta.png",
+          "alt": "Meta creative testing examples",
+          "title": "Multi-angle creative testing on Meta",
+          "description": "UGC, carousel, lifestyle video and imagery variants run in parallel; scale the winners while rotating 20–30% budget to new tests.",
+          "badge": "Testing"
+        }
+      ]
+    },
+    "amazonAds": {
+      "badge": "Missing",
+      "title": "Amazon Ads & Future Marketplaces",
+      "description": "No paid support; essential for product traction when search demand is low.",
+      "recommendations": [
+        "Launch Sponsored Products for priority SKUs; use exact/phrase for control.",
+        "Add Sponsored Brands (if eligible) once catalog depth exists.",
+        "Replicate playbook for Etsy/eBay launches with paid amplification."
+      ],
+      "warning": "Some products should run artist-specific ads only. Avoid broad keywords where we're price-disadvantaged (e.g., generic sticker terms dominated by 200-pack for $9.99) to prevent wasted spend.",
+      "owner": "Marketplace + Performance",
+      "impact": "Medium",
+      "timeline": "10–14 days",
+      "media": [
+        {
+          "src": "/media/amazon_sponsored_banner.png",
+          "alt": "Amazon sponsored banner",
+          "title": "Sponsored banner placement",
+          "description": "High-visibility placement for branded or category terms when eligible.",
+          "badge": "Placement"
+        },
+        {
+          "src": "/media/amazon_sponsored_results.png",
+          "alt": "Amazon sponsored results",
+          "title": "Sponsored results grid",
+          "description": "Illustrates how paid placements appear alongside organic results and how relevance impacts CTR.",
+          "badge": "Results"
+        },
+        {
+          "src": "/media/amazon_sponsored_vide_banners.png",
+          "alt": "Amazon sponsored video banners",
+          "title": "Sponsored video banners",
+          "description": "Video formats to showcase capsule stories and product benefits; strong for top-of-search visibility.",
+          "badge": "Video"
+        }
+      ]
+    },
+    "actionPlan14d": {
+      "badge": "Execution",
+      "title": "Next 14 Days: Action Plan",
+      "description": "Clear sequence for impact and accountability.",
+      "steps": [
+        "Fix conversion goals (Purchase only as primary) and values.",
+        "Rebuild bid strategies; reset learning as needed.",
+        "Create feed title templates and channel fields; enrich attributes.",
+        "Split PMax by category; create SPAG for top SKUs.",
+        "Stand up Meta layers with creative test slate.",
+        "Launch initial Amazon Sponsored Products for 10–20 SKUs."
+      ]
+    }
+  },
+  "social": {
+    "snapshot": {
+      "badge": "Emerging",
+      "title": "Current State: Instagram-First, Promotion-Heavy",
+      "description": "The shop runs @wynwoodwallsshopofficial (≈6.1K followers, 720+ posts). Content focuses on products, artist collabs, and event notices; engagement looks moderate. Creators captured when on-site; otherwise hit or miss. Local programming over-communicated; artist story underplayed.",
+      "platforms": [
+        "Instagram: Active, promotion-heavy focus",
+        "Facebook: Exists but not clearly optimized; accessibility friction",
+        "YouTube: Presence acknowledged as missed opportunity",
+        "TikTok: Recognized gap; no active strategy",
+        "Pinterest: Not leveraged for discovery or lookbooks"
+      ]
+    },
+    "keyGaps": {
+      "badge": "Critical",
+      "title": "Key Gaps Identified",
+      "gaps": [
+        {
+          "issue": "No structured warm-up calendar for drops",
+          "description": "Marketing engages after 3-month production cycle; drops don't spike because hype isn't built ahead of time. Result: reactive launches with no pre-launch momentum.",
+          "impact": "High",
+          "owner": "Social + Marketing"
+        },
+        {
+          "issue": "Single-channel bias",
+          "description": "Over-reliance on Instagram; limited leverage of TikTok, Pinterest, YouTube for discovery and longer-form storytelling. Missing 70%+ of potential audience.",
+          "impact": "High",
+          "owner": "Social"
+        },
+        {
+          "issue": "Unclear Facebook strategy",
+          "description": "Login wall / configuration friction; no clear content approach or accessibility plan. Page exists but underutilized for community and event storytelling.",
+          "impact": "Medium",
+          "owner": "Social"
+        },
+        {
+          "issue": "Missing content system",
+          "description": "Team wants artist storytelling, behind-the-scenes, and education, but it isn't routinized into a calendar and playbooks. Content is ad-hoc and inconsistent.",
+          "impact": "High",
+          "owner": "Content + Social"
+        },
+        {
+          "issue": "Limited cross-site synergy",
+          "description": "High-authority artist pages on main site aren't consistently funneling to shoppable products. Missed internal link opportunities and product discovery.",
+          "impact": "Medium",
+          "owner": "SEO + Social"
+        },
+        {
+          "issue": "No UGC or creator program",
+          "description": "Creators engaged only when on-site. No systematic way to seed products, track performance, or build long-term relationships. Missed affiliate/revenue opportunities.",
+          "impact": "Medium–High",
+          "owner": "Social + Performance"
+        }
+      ]
+    },
+    "status": "Emerging",
+    "findings": "Story not consistently \"wearable art\"; UGC underutilized. Instagram-first, promotion-heavy; TikTok, YouTube, Pinterest are missed opportunities. No warm-up calendar for drops; reactive launches.",
+    "recommendations": "Build capsule narratives with 90-day drop SOP; seed creators and UGC; shift to engagement formats; fix Facebook; test Live Shopping.",
+    "owner": "Social + Content",
+    "evidence": "Post comps, UGC examples, artist interview transcripts, drop performance data"
+  },
+  "marketplaces": {
+    "status": "Planned",
+    "findings": "Assortment not yet live; high readiness for apparel & books.",
+    "recommendations": "Launch curated SKUs on Etsy/Amazon; ensure schema & imagery are compliant.",
+    "owner": "Ops",
+    "evidence": "Assortment matrix, image specs"
+  }
+}

@@ -281,10 +281,11 @@ export interface PlatformReview {
 
 export function usePlatformReviewQuery() {
   return useQuery<PlatformReview>({
-    queryKey: ["/api/platform-review"],
+    queryKey: ["/data/platform-review"],
     queryFn: async () => {
-      const res = await fetch("/api/platform-review");
-      if (!res.ok) throw new Error(`Failed to fetch platform review: ${res.status}`);
+      const res = await fetch("/data/platform-review.json");
+      if (!res.ok)
+        throw new Error(`Failed to fetch platform review: ${res.status}`);
       return res.json();
     },
     staleTime: 60_000,

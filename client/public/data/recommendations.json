@@ -1,0 +1,136 @@
+[
+  {
+    "id": "rec-1",
+    "title": "Redefine Alejandro's Role & Hire Support",
+    "phase": "Immediate Actions (0-30 Days)",
+    "priority": "critical",
+    "timeline": "Week 1-2",
+    "description": "Focus Alejandro 80% on shop revenue generation, transfer other properties to external agency, and hire VA team for operational tasks.",
+    "actions": [
+      "Transfer museum/gallery/corporate site management to external agency",
+      "Hire VA team (Colombia/Philippines) for product uploads, keyword research, and listing maintenance",
+      "Document all current processes and create handoff materials",
+      "Establish daily sync between Nicole and Alejandro",
+      "Set up shared project management system (ClickUp/Monday.com)"
+    ],
+    "expectedOutcome": "Alejandro focuses on revenue-generating activities, operational velocity increases 3x, single point of failure eliminated"
+  },
+  {
+    "id": "rec-2",
+    "title": "Restructure Google Ads for Performance",
+    "phase": "Immediate Actions (0-30 Days)",
+    "priority": "critical",
+    "timeline": "Week 1-3",
+    "description": "Rebuild Google Ads structure with granular control, proper campaign types, and data-driven optimization.",
+    "actions": [
+      "Create product-set campaigns for top collections",
+      "Implement proper Shopping/PMax split",
+      "Build 200+ ad groups for precise targeting",
+      "Add extensive negative keyword lists",
+      "Set up conversion tracking with actual revenue values",
+      "Pause campaigns for out-of-stock products"
+    ],
+    "expectedOutcome": "ROAS improves from 2X to 3.5X+, CPA decreases 40%, wasted spend eliminated"
+  },
+  {
+    "id": "rec-3",
+    "title": "Launch Marketplace Expansion (Etsy, eBay, Amazon)",
+    "phase": "Immediate Actions (0-30 Days)",
+    "priority": "high",
+    "timeline": "Week 0-3",
+    "description": "Expand to multiple marketplaces with automated product feeds to reach new audiences.",
+    "actions": [
+      "Set up Etsy storefront for artist-focused products",
+      "Launch eBay store for collectibles with Best Offer",
+      "Expand Amazon presence (books, allowable categories)",
+      "Implement automated feed management tool",
+      "Create channel-specific product titles and attributes",
+      "Establish daily sync and error monitoring"
+    ],
+    "expectedOutcome": "400-600 SKUs live across marketplaces, $20-30K additional GMV in first 90 days"
+  },
+  {
+    "id": "rec-4",
+    "title": "Implement Email Marketing Automation",
+    "phase": "Immediate Actions (0-30 Days)",
+    "priority": "high",
+    "timeline": "Week 0-3",
+    "description": "Transform email from monthly blasts to strategic automated flows driving revenue.",
+    "actions": [
+      "Set up welcome series (3-email sequence)",
+      "Implement abandoned cart recovery",
+      "Create post-purchase follow-up flow",
+      "Build win-back campaign for lapsed customers",
+      "Segment list by engagement and purchase behavior",
+      "A/B test subject lines and send times"
+    ],
+    "expectedOutcome": "Email drives 7-10% of revenue during BFCM, ongoing 15% revenue contribution"
+  },
+  {
+    "id": "rec-5",
+    "title": "Cross-Link Museum Site to Shop",
+    "phase": "Short-Term (1-3 Months)",
+    "priority": "high",
+    "timeline": "Month 1-2",
+    "description": "Leverage 250K monthly museum visitors by integrating shop products on artist pages.",
+    "actions": [
+      "Build artist product module component for museum site",
+      "Map artist pages to shop product tags/collections",
+      "Implement UTM tracking for attribution",
+      "Add 'Shop This Artist' CTAs on all artist pages",
+      "Create reciprocal links from shop to museum content"
+    ],
+    "expectedOutcome": "5-10K additional monthly shop visitors from museum traffic, improved SEO through internal linking"
+  },
+  {
+    "id": "rec-6",
+    "title": "Launch Live Shopping Program",
+    "phase": "Short-Term (1-3 Months)",
+    "priority": "medium",
+    "timeline": "Month 1-3",
+    "description": "Create weekly live shopping shows featuring artists and exclusive products.",
+    "actions": [
+      "Develop run-of-show template and content calendar",
+      "Set up multi-platform streaming (Instagram, TikTok, YouTube)",
+      "Create limited edition/signed items for shows",
+      "Build post-production workflow for highlights",
+      "Implement shoppable links and promo codes",
+      "Train host and establish guest rotation"
+    ],
+    "expectedOutcome": "$3-5K GMV per episode, 5% opt-in rate from viewers, 30+ social content pieces per show"
+  },
+  {
+    "id": "rec-7",
+    "title": "Develop 'Wearable Art' Fashion Brand",
+    "phase": "Medium-Term (3-6 Months)",
+    "priority": "medium",
+    "timeline": "Month 2-6",
+    "description": "Position fashion line as collectible wearable art with premium positioning and storytelling.",
+    "actions": [
+      "Create brand brief and visual identity for fashion line",
+      "Produce professional lookbook with artist narratives",
+      "Launch capsule collections with limited units",
+      "Seed micro-influencers in Miami art/fashion scene",
+      "Develop wholesale pilot with 10-20 boutiques",
+      "Create size charts, care guides, and model guidelines"
+    ],
+    "expectedOutcome": "Fashion positioned as premium collectible, wholesale channel established, 30% margins improve to 50%+"
+  },
+  {
+    "id": "rec-8",
+    "title": "Implement AI-Powered Automation",
+    "phase": "Medium-Term (3-6 Months)",
+    "priority": "medium",
+    "timeline": "Month 3-6",
+    "description": "Deploy AI tools to automate content creation, product optimization, and customer service.",
+    "actions": [
+      "Implement AI product description generation",
+      "Automate social media content creation",
+      "Set up AI chatbot for customer service",
+      "Deploy email subject line optimization",
+      "Create automated product feed optimization",
+      "Build AI-assisted trend analysis for fashion"
+    ],
+    "expectedOutcome": "80% time savings on manual tasks, 10x content output, 24/7 customer support, data-driven design decisions"
+  }
+]

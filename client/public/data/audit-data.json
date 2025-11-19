@@ -1,0 +1,1346 @@
+{
+  "executiveSummary": {
+    "keyFinding": "The shop's online sales are underperforming despite having world-class assets (high domain authority, quality products, significant foot traffic), primarily due to fragmented marketing efforts, resource constraints, and misalignment between product development and digital marketing strategies.",
+    "overview": [
+      "Strong foundational assets: Domain Authority of 47-72, exclusive artist relationships, and 250K monthly museum visitors",
+      "Significant execution challenges limiting online revenue growth despite 200% growth in years 1-2",
+      "Current year showing 10% decline attributed to tariffs and supplier instability",
+      "Critical gap: Alejandro (E-Commerce Director) stretched across 4 websites with minimal support",
+      "Disconnected silos between technical execution (Alejandro) and creative marketing (Nicole)",
+      "Products designed for in-store retail, not e-commerce optimization"
+    ],
+    "criticalMetrics": [
+      {
+        "label": "Museum Monthly Traffic",
+        "value": "250K",
+        "trend": 12,
+        "trendDirection": "up"
+      },
+      {
+        "label": "Shop Conversion Rate",
+        "value": "0.8%",
+        "trend": -15,
+        "trendDirection": "down",
+        "suffix": "%"
+      },
+      {
+        "label": "Domain Authority",
+        "value": "72",
+        "trend": 5,
+        "trendDirection": "up"
+      },
+      {
+        "label": "Total SKUs",
+        "value": "2,500",
+        "trend": 0,
+        "trendDirection": "neutral"
+      },
+      {
+        "label": "Social Following (Shop)",
+        "value": "8K",
+        "trend": -20,
+        "trendDirection": "down"
+      },
+      {
+        "label": "Google Ads Budget",
+        "value": "$3,000",
+        "trend": 67,
+        "trendDirection": "up",
+        "suffix": "/mo"
+      }
+    ]
+  },
+  "organizational": {
+    "teamMembers": [
+      {
+        "id": "daniel-pezet",
+        "name": "Daniel Pezet",
+        "role": "Operations Director",
+        "department": "Operations & Product",
+        "description": [
+          "Oversees shop operations and product development",
+          "Manages 2,500 SKU inventory across multiple categories",
+          "Handles supplier relationships across 15 production categories",
+          "Compensation tied to sales performance"
+        ],
+        "strengths": [
+          "Operations Management",
+          "Supplier Relations",
+          "Product Development"
+        ],
+        "challenges": [
+          "Scaling to match potential demand"
+        ]
+      },
+      {
+        "id": "alejandro-trujillo",
+        "name": "Alejandro Trujillo",
+        "role": "E-Commerce Director",
+        "department": "Digital Commerce",
+        "description": [
+          "Manages entire digital ecosystem: Shop, Museum, Gallery, and Goldman Properties sites",
+          "Shopify Plus expert with HTML, CSS, JavaScript, and AI/automation skills",
+          "Handles Google Ads, SEO, product data optimization",
+          "Working in isolation with minimal support"
+        ],
+        "strengths": [
+          "Technical Proficiency",
+          "Problem Solving",
+          "Adaptability"
+        ],
+        "challenges": [
+          "Stretched across 4 properties",
+          "No delegation or SOPs",
+          "Limited strategic marketing depth"
+        ]
+      },
+      {
+        "id": "nicole-deaguiar",
+        "name": "Nicole DeAguiar",
+        "role": "Marketing Director",
+        "department": "Marketing & PR",
+        "description": [
+          "Started July 2024 (relatively new to organization)",
+          "Manages PR, social media, email campaigns, influencer partnerships",
+          "$2,000/month total PR retainer ($1,000 for shop)",
+          "Currently lacks dedicated social media support"
+        ],
+        "strengths": [
+          "PR Management",
+          "Creative Strategy",
+          "Influencer Relations"
+        ]
+      },
+      {
+        "id": "laura-rodriguez",
+        "name": "Laura Rodriguez",
+        "role": "Operations Manager",
+        "department": "Operations",
+        "description": [
+          "Daniel's right hand for 5 years",
+          "Manages fulfillment operations and product coordination",
+          "Oversees Rebecca (fulfillment specialist)",
+          "Deep institutional knowledge"
+        ],
+        "strengths": [
+          "Fulfillment Management",
+          "Operational Excellence"
+        ]
+      }
+    ],
+    "reportingIssues": [
+      "Alejandro reports to Daniel but needs closer collaboration with Nicole (marketing)",
+      "Current structure creates silos between technical execution and creative marketing",
+      "No dedicated e-commerce strategy role above operational level",
+      "Marketing team lacks social media specialist despite 400K email list"
+    ]
+  },
+  "currentState": {
+    "platforms": [
+      {
+        "name": "Lightspeed",
+        "type": "POS",
+        "description": "Primary point of sale system - 95% of sales are on-site"
+      },
+      {
+        "name": "Shopify",
+        "type": "E-Commerce",
+        "description": "Online store platform (migrated ~3 years ago)"
+      },
+      {
+        "name": "Mailchimp",
+        "type": "Email",
+        "description": "Email marketing platform with 400K contacts",
+        "cost": "$2,500/month"
+      },
+      {
+        "name": "Google Analytics",
+        "type": "Analytics",
+        "description": "Traffic and behavior tracking across properties"
+      },
+      {
+        "name": "SEMrush",
+        "type": "SEO",
+        "description": "SEO and competitive analysis tool",
+        "cost": "$350/month"
+      },
+      {
+        "name": "Zola",
+        "type": "Ticketing",
+        "description": "Museum ticket sales platform"
+      },
+      {
+        "name": "Art Cloud",
+        "type": "Gallery",
+        "description": "Gallery art sales management"
+      }
+    ],
+    "trafficMetrics": [
+      {
+        "source": "Museum Website",
+        "value": 250000,
+        "change": 12,
+        "description": "High conversion potential"
+      },
+      {
+        "source": "Shop Direct",
+        "value": 45000,
+        "change": -10,
+        "description": "Artist collaborations"
+      },
+      {
+        "source": "Google Ads",
+        "value": 35000,
+        "change": 33,
+        "description": "Primary paid channel"
+      },
+      {
+        "source": "Organic Search",
+        "value": 28000,
+        "change": 15,
+        "description": "Strong SEO rankings"
+      },
+      {
+        "source": "Social Media",
+        "value": 12000,
+        "change": 8,
+        "description": "Growing but underperforming"
+      }
+    ],
+    "conversionMetrics": [
+      {
+        "label": "Site Conversion Rate",
+        "value": "0.8%",
+        "trend": -15,
+        "trendDirection": "down",
+        "suffix": "%"
+      },
+      {
+        "label": "Domain Authority (Ahrefs)",
+        "value": "72",
+        "trend": 8,
+        "trendDirection": "up"
+      },
+      {
+        "label": "Average Order Value",
+        "value": "$95",
+        "trend": -5,
+        "trendDirection": "down"
+      }
+    ],
+    "productCategories": [
+      {
+        "name": "Third-party Collectibles",
+        "skuCount": 875,
+        "margin": "50-60%",
+        "description": "Super Plastic, Bear Bricks, Kidrobot",
+        "status": "Supplier instability - Super Plastic closed"
+      },
+      {
+        "name": "Artist-Designed Products",
+        "skuCount": 1000,
+        "margin": "60-70%",
+        "description": "Books, notebooks, apparel, accessories",
+        "status": "Higher margins, limited quantities"
+      },
+      {
+        "name": "Stationery & Small Goods",
+        "skuCount": 625,
+        "margin": "30-40%",
+        "description": "Stickers, magnets, keychains",
+        "status": "Low margins, high competition"
+      }
+    ],
+    "marketingChannels": [
+      {
+        "channel": "Google Ads",
+        "budget": "$3,000/month",
+        "performance": "2X ROAS after account separation, 33% growth",
+        "issues": [
+          "Only 4-5 campaigns (needs 200+ ad groups)",
+          "Performance Max overuse",
+          "Broad match keywords draining budget"
+        ]
+      },
+      {
+        "channel": "Meta/Facebook Ads",
+        "budget": "$900/month",
+        "performance": "Growing but still underperforming",
+        "issues": [
+          "Generic campaigns",
+          "Not product-specific",
+          "Recent account verification needed"
+        ]
+      },
+      {
+        "channel": "Email Marketing (Mailchimp)",
+        "budget": "$2,500/month + $1,000 consultant",
+        "performance": "350K-400K list at ceiling, stagnant engagement",
+        "issues": [
+          "No sales conversion",
+          "Monthly sends only",
+          "No automation flows",
+          "No segmentation"
+        ]
+      },
+      {
+        "channel": "SEO",
+        "budget": "Organic",
+        "performance": "Ranking #1-2 for multiple collectible brands",
+        "issues": [
+          "Ranking for out-of-stock products",
+          "Museum traffic not leveraged"
+        ]
+      },
+      {
+        "channel": "Social Media",
+        "budget": "Limited",
+        "performance": "8K followers (shop), 100K+ (museum)",
+        "issues": [
+          "Promotion-heavy",
+          "Lacking storytelling",
+          "No TikTok presence",
+          "No live shopping"
+        ]
+      }
+    ]
+  },
+  "problems": [
+    {
+      "id": "resource-crisis",
+      "title": "Resource Allocation & Strategic Planning",
+      "category": "resource",
+      "severity": "critical",
+      "description": "Absence of strategic activity planning combined with Alejandro manually managing other web-related activities (Museum website coordination, Gallery, and Goldman Properties sites) creates a lack of clear organizational focus and multi-role execution plan.",
+      "symptoms": [
+        "No defined strategic roadmap or prioritization framework",
+        "Alejandro managing 4 separate websites (Shop, Museum, Gallery, Goldman Properties) without role clarity",
+        "Manual execution of tactical tasks (2,500 SKU data entry, Google Ads across multiple businesses)",
+        "No delegation structure or standard operating procedures",
+        "Reactive firefighting instead of proactive strategic planning",
+        "Multi-role responsibilities without defined execution plan or success metrics"
+      ],
+      "impact": "Without strategic planning and clear role definition, resources are scattered across competing priorities, preventing focused execution on revenue-driving initiatives and creating organizational inefficiency"
+    },
+    {
+      "id": "marketing-disconnect",
+      "title": "Insufficient Marketing & E-Commerce Strategic Alignment",
+      "category": "strategy",
+      "severity": "high",
+      "description": "Previous marketing personnel operated without deep coordination with e-commerce operations. While Nicole (new marketing lead) is now more hands-on with e-commerce, deeper strategic planning and coordination is needed around brand positioning, product strategy, launch coordination, and information flow.",
+      "symptoms": [
+        "Historical lack of collaboration between marketing and e-commerce teams",
+        "Product launches executed without coordinated marketing strategy",
+        "No unified brand positioning across channels",
+        "Insufficient product information and storytelling in marketing materials",
+        "Launch timing misaligned between product availability and campaign readiness",
+        "Limited cross-functional planning on product strategy, pricing, and positioning"
+      ],
+      "impact": "Missed revenue opportunities, inconsistent brand messaging, suboptimal product positioning, and inefficient marketing spend due to lack of strategic coordination on brand, products, and launch strategies"
+    },
+    {
+      "id": "product-data-quality",
+      "title": "Product Feed & Marketplace Integration",
+      "category": "technical",
+      "severity": "high",
+      "description": "Need to consolidate product feeds in Google Merchant Center, integrate Etsy and eBay marketplace feeds, and standardize product data using a recommended template to ensure all fields are properly populated.",
+      "symptoms": [
+        "Multiple product feeds in Google Merchant Center instead of consolidated single feed",
+        "Etsy and eBay marketplaces not connected via feed integration",
+        "Inconsistent product data fields across different systems",
+        "Product template not standardized (missing or incomplete fields)",
+        "Manual product updates required across multiple channels",
+        "No automated feed syndication to new marketplaces"
+      ],
+      "impact": "Limited marketplace presence, manual data management overhead, and missed revenue opportunities from Etsy and eBay channels"
+    },
+    {
+      "id": "museum-shop-synergy",
+      "title": "Untapped Museum-Shop Synergy & Integration",
+      "category": "operational",
+      "severity": "high",
+      "description": "Museum website (250K monthly visitors, high domain authority) and shop operate independently, missing significant opportunity to leverage audience, cross-promote, and integrate shop seamlessly into museum experience.",
+      "symptoms": [
+        "Museum website (DR 72, 22K+ backlinks) not driving shop traffic",
+        "Artist pages ranking #1-2 for relevant keywords but not showcasing or linking to artist products",
+        "No cross-retargeting between museum visitors and shop audiences",
+        "Shop not integrated into artist pages or blog/news content",
+        "Museum traffic not monetized through shop recommendations or integrations",
+        "Missed opportunity for shared SEO authority and keyword ranking"
+      ],
+      "impact": "Significant untapped revenue from museum audience, lost organic traffic through high-authority artist pages, and missed cross-selling opportunities through seamless museum-shop integration"
+    },
+    {
+      "id": "google-ads-structure",
+      "title": "Google Ads Structure Inefficiency",
+      "category": "technical",
+      "severity": "medium",
+      "description": "Google Ads account poorly structured for granular control and optimization.",
+      "symptoms": [
+        "Only 4-5 campaigns (should be 200+ ad groups)",
+        "Overusing Performance Max (should be Shopping + PMax remarketing)",
+        "Search campaigns for remarketing (backwards)",
+        "No granular product-level campaigns",
+        "Broad match keywords draining budget",
+        "Ranking #1 for 'Super Plastic' but no inventory"
+      ],
+      "impact": "Paying for clicks that can't convert, unable to optimize at product level, and wasting 30-40% of ad spend on irrelevant traffic"
+    },
+    {
+      "id": "automation-gaps",
+      "title": "Manual Processes Preventing Scale",
+      "category": "operational",
+      "severity": "medium",
+      "description": "Critical workflows being done manually, limiting scalability and creating bottlenecks.",
+      "symptoms": [
+        "Product data entry one-by-one (not bulk)",
+        "SEO optimization per product manually",
+        "Google Ads keyword research manual",
+        "Amazon listing creation manual",
+        "Price monitoring vs. competitors manual",
+        "No automated feed optimization"
+      ],
+      "impact": "Time-consuming workflows prevent scaling to full catalog potential across marketplaces, limiting revenue growth"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "rec-1",
+      "title": "Redefine Alejandro's Role & Hire Support",
+      "phase": "Immediate Actions (0-30 Days)",
+      "priority": "critical",
+      "timeline": "Week 1-2",
+      "description": "Focus Alejandro 80% on shop revenue generation, transfer other properties to external agency, and hire VA team for operational tasks.",
+      "actions": [
+        "Transfer museum/gallery/corporate site management to external agency",
+        "Hire VA team (Colombia/Philippines) for product uploads, keyword research, and listing maintenance",
+        "Document all current processes and create handoff materials",
+        "Establish daily sync between Nicole and Alejandro",
+        "Set up shared project management system (ClickUp/Monday.com)"
+      ],
+      "expectedOutcome": "Alejandro focuses on revenue-generating activities, operational velocity increases 3x, single point of failure eliminated"
+    },
+    {
+      "id": "rec-2",
+      "title": "Restructure Google Ads for Performance",
+      "phase": "Immediate Actions (0-30 Days)",
+      "priority": "critical",
+      "timeline": "Week 1-3",
+      "description": "Rebuild Google Ads structure with granular control, proper campaign types, and data-driven optimization.",
+      "actions": [
+        "Create product-set campaigns for top collections",
+        "Implement proper Shopping/PMax split",
+        "Build 200+ ad groups for precise targeting",
+        "Add extensive negative keyword lists",
+        "Set up conversion tracking with actual revenue values",
+        "Pause campaigns for out-of-stock products"
+      ],
+      "expectedOutcome": "ROAS improves from 2X to 3.5X+, CPA decreases 40%, wasted spend eliminated"
+    },
+    {
+      "id": "rec-3",
+      "title": "Launch Marketplace Expansion (Etsy, eBay, Amazon)",
+      "phase": "Immediate Actions (0-30 Days)",
+      "priority": "high",
+      "timeline": "Week 0-3",
+      "description": "Expand to multiple marketplaces with automated product feeds to reach new audiences.",
+      "actions": [
+        "Set up Etsy storefront for artist-focused products",
+        "Launch eBay store for collectibles with Best Offer",
+        "Expand Amazon presence (books, allowable categories)",
+        "Implement automated feed management tool",
+        "Create channel-specific product titles and attributes",
+        "Establish daily sync and error monitoring"
+      ],
+      "expectedOutcome": "400-600 SKUs live across marketplaces, $20-30K additional GMV in first 90 days"
+    },
+    {
+      "id": "rec-4",
+      "title": "Implement Email Marketing Automation",
+      "phase": "Immediate Actions (0-30 Days)",
+      "priority": "high",
+      "timeline": "Week 0-3",
+      "description": "Transform email from monthly blasts to strategic automated flows driving revenue.",
+      "actions": [
+        "Set up welcome series (3-email sequence)",
+        "Implement abandoned cart recovery",
+        "Create post-purchase follow-up flow",
+        "Build win-back campaign for lapsed customers",
+        "Segment list by engagement and purchase behavior",
+        "A/B test subject lines and send times"
+      ],
+      "expectedOutcome": "Email drives 7-10% of revenue during BFCM, ongoing 15% revenue contribution"
+    },
+    {
+      "id": "rec-5",
+      "title": "Cross-Link Museum Site to Shop",
+      "phase": "Short-Term (1-3 Months)",
+      "priority": "high",
+      "timeline": "Month 1-2",
+      "description": "Leverage 250K monthly museum visitors by integrating shop products on artist pages.",
+      "actions": [
+        "Build artist product module component for museum site",
+        "Map artist pages to shop product tags/collections",
+        "Implement UTM tracking for attribution",
+        "Add 'Shop This Artist' CTAs on all artist pages",
+        "Create reciprocal links from shop to museum content"
+      ],
+      "expectedOutcome": "5-10K additional monthly shop visitors from museum traffic, improved SEO through internal linking"
+    },
+    {
+      "id": "rec-6",
+      "title": "Launch Live Shopping Program",
+      "phase": "Short-Term (1-3 Months)",
+      "priority": "medium",
+      "timeline": "Month 1-3",
+      "description": "Create weekly live shopping shows featuring artists and exclusive products.",
+      "actions": [
+        "Develop run-of-show template and content calendar",
+        "Set up multi-platform streaming (Instagram, TikTok, YouTube)",
+        "Create limited edition/signed items for shows",
+        "Build post-production workflow for highlights",
+        "Implement shoppable links and promo codes",
+        "Train host and establish guest rotation"
+      ],
+      "expectedOutcome": "$3-5K GMV per episode, 5% opt-in rate from viewers, 30+ social content pieces per show"
+    },
+    {
+      "id": "rec-7",
+      "title": "Develop 'Wearable Art' Fashion Brand",
+      "phase": "Medium-Term (3-6 Months)",
+      "priority": "medium",
+      "timeline": "Month 2-6",
+      "description": "Position fashion line as collectible wearable art with premium positioning and storytelling.",
+      "actions": [
+        "Create brand brief and visual identity for fashion line",
+        "Produce professional lookbook with artist narratives",
+        "Launch capsule collections with limited units",
+        "Seed micro-influencers in Miami art/fashion scene",
+        "Develop wholesale pilot with 10-20 boutiques",
+        "Create size charts, care guides, and model guidelines"
+      ],
+      "expectedOutcome": "Fashion positioned as premium collectible, wholesale channel established, 30% margins improve to 50%+"
+    },
+    {
+      "id": "rec-8",
+      "title": "Implement AI-Powered Automation",
+      "phase": "Medium-Term (3-6 Months)",
+      "priority": "medium",
+      "timeline": "Month 3-6",
+      "description": "Deploy AI tools to automate content creation, product optimization, and customer service.",
+      "actions": [
+        "Implement AI product description generation",
+        "Automate social media content creation",
+        "Set up AI chatbot for customer service",
+        "Deploy email subject line optimization",
+        "Create automated product feed optimization",
+        "Build AI-assisted trend analysis for fashion"
+      ],
+      "expectedOutcome": "80% time savings on manual tasks, 10x content output, 24/7 customer support, data-driven design decisions"
+    }
+  ],
+  "marketingStrategy": {
+    "overview": {
+      "narrative": "We are stabilizing the digital commerce engine so that every channel tells a cohesive Wynwood Walls story, trades on the parent site's authority, and converts with measurement we can trust.",
+      "guidingPrinciples": [
+        "Fix measurement and feed hygiene before scaling spend",
+        "Tell the artist and wearable-art story in every touchpoint",
+        "Run channel plays in parallel with clear owners and feedback loops",
+        "Design for multi-site synergy: the museum drives the shop, the shop monetizes the museum"
+      ],
+      "guardrails": [
+        "No paid spend expansion without verified purchase tracking",
+        "Protect artist inventory visibility across channels",
+        "Maintain merchandise availability accuracy across Merchant Center, marketplaces, and the shop",
+        "Keep Alejandro focused 80% on revenue levers with support for operational tasks"
+      ]
+    },
+    "objectives": [
+      "Revenue acceleration for holidays while fixing measurement and feed hygiene",
+      "Expand reach via marketplaces (Etsy, Amazon, eBay) using automated product feeds",
+      "Leverage parent brand and site to route qualified traffic with systematic UTMs",
+      "Position fashion as wearable art with brand storytelling and content capture",
+      "Build persistent social and email communities that convert at benchmark rates"
+    ],
+    "kpis": [
+      {
+        "label": "Conversion Rate Target",
+        "value": "1.2-1.5%",
+        "trend": 40,
+        "trendDirection": "up",
+        "suffix": "%"
+      },
+      {
+        "label": "AOV Target",
+        "value": "$115",
+        "trend": 20,
+        "trendDirection": "up"
+      },
+      {
+        "label": "True ROAS",
+        "value": "350%",
+        "trend": 75,
+        "trendDirection": "up",
+        "suffix": "%"
+      },
+      {
+        "label": "Email Revenue Share",
+        "value": "5-7%",
+        "trend": 100,
+        "trendDirection": "up",
+        "suffix": "%"
+      },
+      {
+        "label": "IG Follower Growth",
+        "value": "+30%",
+        "trend": 30,
+        "trendDirection": "up",
+        "suffix": "%"
+      },
+      {
+        "label": "Marketplace SKUs",
+        "value": "All",
+        "trend": 100,
+        "trendDirection": "up"
+      }
+    ],
+    "sections": [
+      {
+        "id": "platform-insights",
+        "title": "Platform & Insight Overview",
+        "description": "Lay the operational foundation: accurate data, stable feeds, and stakeholder alignment on revenue priorities.",
+        "focusPoints": [
+          "Repair Google Ads conversion tracking and GA4 attribution",
+          "Sync Merchant Center inventory and pricing across all feeds",
+          "Stand up reporting cadence that exposes channel health weekly",
+          "Document SOPs so marketing can work 90 days ahead of product launches"
+        ],
+        "plays": [
+          {
+            "title": "Stabilize Measurement & Merchant Center",
+            "timeframe": "Week 0-1",
+            "owners": [
+              "Alejandro (Ecom Ops)",
+              "Marketing Ops Partner"
+            ],
+            "objectives": [
+              "Correct Google Ads conversion actions and dynamic values",
+              "Eliminate out-of-stock SKUs from paid inventory feeds"
+            ],
+            "tasks": [
+              "Audit all primary conversion actions and restrict \"Purchase\" as the only primary",
+              "Push fixed GTM container and validate purchase events end-to-end",
+              "Deploy feed management app to rewrite titles with artist + product descriptors",
+              "Add monitoring alerts for availability mismatches"
+            ],
+            "dependencies": [
+              "Access to Google Ads, GA4, Merchant Center"
+            ],
+            "successSignals": [
+              "<2% feed errors"
+            ]
+          },
+          {
+            "title": "Growth Program War-Room",
+            "timeframe": "Week 1 ongoing",
+            "owners": [
+              "Marketing Director",
+              "Ecommerce Director"
+            ],
+            "objectives": [
+              "Create shared roadmap working 90 days ahead",
+              "Run weekly parallel standups for measurement, merchandising, and creative"
+            ],
+            "tasks": [
+              "Launch Clickup.com space with swim lanes per channel",
+              "Institute weekly speed-dating sync between marketing, merchandising, creative and ecom ops",
+              "Publish KPI scorecard in Clickup each Friday"
+            ],
+            "successSignals": [
+              "Weekly KPI email",
+              "Launch SOP executed on next drop"
+            ]
+          }
+        ],
+        "enablement": [
+          {
+            "title": "Analytics Enablement",
+            "description": "Give the team shared visibility into truth-of-revenue metrics.",
+            "items": [
+              "GA4 dashboard segmented by source/medium + artist collections",
+              "Template for campaign tagging across Google, Meta, TikTok, Pinterest",
+              "Looker Studio executive view for leadership"
+            ]
+          }
+        ],
+        "experiments": [
+          {
+            "title": "Checkout CRO Sprint",
+            "hypothesis": "Introducing bundled upsells in checkout will lift AOV by 8%",
+            "steps": [
+              "Implement Rebuy/Zipify cross-sells",
+              "Run A/B for two weeks",
+              "Review impact in GA4"
+            ],
+            "owner": "Ecommerce Team"
+          }
+        ]
+      },
+      {
+        "id": "social",
+        "title": "Social & Community Flywheel",
+        "description": "Scale storytelling and wearable-art positioning across Instagram, TikTok, YouTube, and live shopping.",
+        "focusPoints": [
+          "Shift social calendar toward storytelling, live formats, and UGC",
+          "Run TikTok Live Shopping pilots featuring exclusive drops",
+          "Activate influencers and Miami micro-creators with measurable UTMs",
+          "Reuse museum content to warm audiences before campaigns"
+        ],
+        "strategyDetails": {
+          "positioning": {
+            "badge": "Strategic",
+            "title": "Positioning & Content Pillars",
+            "description": "Become the online authority on street art with recurring editorial + video pillars.",
+            "pillars": [
+              "Artist Spotlights: Mini-docs, interviews, studio access",
+              "Behind-the-Walls: Process videos, production cycles, collaboration stories",
+              "Education: Art movements, techniques, cultural context",
+              "Wearable Art Styling: Lookbooks, outfit inspiration, lifestyle content"
+            ],
+            "action": "Drive internal links from main site artist pages to matching shop products."
+          },
+          "platformStrategy": {
+            "badge": "Roadmap",
+            "title": "Platform-Specific Strategy",
+            "platforms": [
+              {
+                "name": "Instagram",
+                "shift": "From mostly promos to engagement formats",
+                "tactics": [
+                  "Reels: 2–3x/week (artist features, process, styling)",
+                  "Stories: Daily with polls, Q&As, behind-the-scenes",
+                  "Lives: Scheduled artist chats, Q&A sessions",
+                  "UGC: Consistent reposting and tagging"
+                ]
+              },
+              {
+                "name": "TikTok",
+                "shift": "Trend-native, short-form discovery",
+                "tactics": [
+                  "Trend-aligned clips (artist process, styling, humor)",
+                  "TikTok Live Shopping for apparel capsules with artists",
+                  "Duets and stitches with creator content"
+                ]
+              },
+              {
+                "name": "YouTube",
+                "shift": "Long-form authority and SEO",
+                "tactics": [
+                  "Mini-docs: Artist interviews, studio tours (8–15 min)",
+                  "Process videos: Collaboration timelines, design evolution",
+                  "Reuse as Shorts for top-of-funnel discovery"
+                ]
+              },
+              {
+                "name": "Pinterest",
+                "shift": "Sustained referral traffic and inspiration",
+                "tactics": [
+                  "Lookbook boards: Seasonal, artist-curated",
+                  "Gift guides: Holiday, home decor, lifestyle",
+                  "Pins link to blog posts and product pages"
+                ]
+              },
+              {
+                "name": "Facebook",
+                "shift": "Community and event storytelling",
+                "tactics": [
+                  "Fix page accessibility and configuration",
+                  "Longer video posts and community updates",
+                  "Event announcements and artist spotlights"
+                ]
+              }
+            ]
+          },
+          "creators": {
+            "badge": "Growth",
+            "title": "Creators & Affiliate Program",
+            "description": "Stand up a lightweight influencer/affiliate program tied to limited drops and wear-tests.",
+            "focus": [
+              "Art/fashion/lifestyle creators in Miami and beyond",
+              "Trackable promo codes for each creator",
+              "Product seeding for limited drops",
+              "Revenue share or flat fee per conversion"
+            ]
+          },
+          "dropOperatingSystem": {
+            "badge": "Execution",
+            "title": "Product-Drop Operating System (90-Day Hype SOP)",
+            "description": "A concrete playbook for every collaboration/apparel drop to build anticipation and drive sales.",
+            "timeline": [
+              {
+                "phase": "T-90 (Announcement)",
+                "actions": [
+                  "Announce collab theme and artist story",
+                  "Start weekly behind-the-scenes snippets",
+                  "Collect \"notify me first\" emails via IG/TikTok/YT links",
+                  "Seed creator kits to 3–5 micro-influencers"
+                ]
+              },
+              {
+                "phase": "T-60 (Build Hype)",
+                "actions": [
+                  "Publish artist mini-interview (Reel + YouTube clip)",
+                  "Studio/process Reels (2–3x/week)",
+                  "First lookbook Reel with styling tips",
+                  "Creator unboxing and styling posts go live"
+                ]
+              },
+              {
+                "phase": "T-30 (Pre-Order)",
+                "actions": [
+                  "Reveal launch date and open limited pre-orders",
+                  "Schedule IG Live + TikTok Live with artist",
+                  "Paid social warms custom audiences",
+                  "Email list gets exclusive early-access link"
+                ]
+              },
+              {
+                "phase": "Launch Week (Convert)",
+                "actions": [
+                  "Daily Shorts/Reels with product close-ups and styling",
+                  "Live Shopping on IG and TikTok",
+                  "UGC repost contests (#WearableArt)",
+                  "Post-launch lookbook carousel and styling guide"
+                ]
+              }
+            ]
+          },
+          "execution30_60_90": {
+            "badge": "Execution",
+            "title": "30/60/90 Social & Content Plan",
+            "phases": [
+              {
+                "period": "Days 0–30 (Foundation)",
+                "owner": "Social + Content",
+                "impact": "High",
+                "timeline": "Immediate",
+                "tasks": [
+                  "Fix Facebook page accessibility; audit current config",
+                  "Set weekly content cadences per platform (e.g., IG: 3 Reels + 5 Stories/wk)",
+                  "Book 4 artist/creator tapings for Reels/Shorts/long-form content",
+                  "Launch #WearableArt UGC prompt across all platforms",
+                  "Publish 2x/week Stories with polls and Q&As",
+                  "Identify one Q4 drop; start T-90 warm-up (compress if window is shorter)"
+                ]
+              },
+              {
+                "period": "Days 31–60 (Hype)",
+                "owner": "Social + Performance",
+                "impact": "Medium–High",
+                "timeline": "Ongoing",
+                "tasks": [
+                  "Roll out TikTok Live test + IG Live artist chat (1x/week)",
+                  "Push first lookbook Reel; track views and saves",
+                  "Activate 5 micro-creators with trackable promo codes",
+                  "Publish 2× YouTube pieces (artist mini-doc + process video)",
+                  "Clip YouTube into Shorts for top-of-funnel reach",
+                  "Monitor engagement rate and UGC volume daily"
+                ]
+              },
+              {
+                "period": "Days 61–90 (Convert & Scale)",
+                "owner": "Social + Performance + Ops",
+                "impact": "Medium",
+                "timeline": "Ongoing",
+                "tasks": [
+                  "T-30 pre-order phase for next drop; daily Shorts/Reels",
+                  "Creator recap carousel; tag and celebrate top UGC",
+                  "Evaluate: keep what hits; cut what doesn't",
+                  "Schedule next capsule on same 90-day rail",
+                  "Measure assisted revenue from social (with correct UTM tracking)",
+                  "Report on drop waitlist sign-ups and Live Shopping conversion"
+                ]
+              }
+            ]
+          },
+          "kpis": {
+            "badge": "Measurement",
+            "title": "KPIs to Watch Monthly",
+            "metrics": [
+              "Engagement rate per platform (IG, TikTok, YouTube, Pinterest)",
+              "Reels/Shorts views and saves (top 10% benchmark)",
+              "UGC volume and sentiment (hashtag tracking)",
+              "Click-through rate to shop (UTM-tagged links)",
+              "Assisted revenue from social (GA4 + CRM attribution)",
+              "Drop waitlist sign-ups and email capture rate",
+              "Live Shopping conversion rate and AOV",
+              "Creator program ROI (revenue per creator code)"
+            ]
+          }
+        },
+        "plays": [
+          {
+            "title": "4-Channel Weekly Drumbeat",
+            "timeframe": "Week 1-4 repeating",
+            "owners": [
+              "Social Lead",
+              "Video Editor",
+              "Community Manager"
+            ],
+            "objectives": [
+              "Publish minimum 5 Reels/TikToks weekly highlighting artists and product context",
+              "Cross-post museum Instagram content with shop-specific CTAs"
+            ],
+            "tasks": [
+              "Build Notion-based content calendar with required CTAs",
+              "Publish TikTok Live shopping plan with artists twice per month",
+              "Launch hashtag program (#WearableArt, #WynwoodDrop)"
+            ],
+            "successSignals": [
+              "+30% IG follower growth",
+              "2 TikTok Live sessions executed"
+            ]
+          },
+          {
+            "title": "Influencer Capsule",
+            "timeframe": "Month 1",
+            "owners": [
+              "Marketing Director",
+              "PR Coordinator"
+            ],
+            "objectives": [
+              "Seed wearable-art looks with 10 Miami creators",
+              "Capture UGC for ads"
+            ],
+            "tasks": [
+              "Identify creators aligned to art/fashion niches",
+              "Ship lookbook + talking points",
+              "Track UGC via specific UTMs"
+            ],
+            "successSignals": [
+              "UGC library of 20 assets",
+              "5 creators driving sessions"
+            ]
+          }
+        ],
+        "enablement": [
+          {
+            "title": "Community Toolkit",
+            "description": "Resources for sustaining always-on conversations.",
+            "items": [
+              "Creator brief templates",
+              "UGC incentive matrix",
+              "Livestream run-of-show"
+            ]
+          }
+        ],
+        "experiments": [
+          {
+            "title": "YouTube Artist Mini-Docs",
+            "hypothesis": "5-minute artist profiles embedded on museum pages will raise click-through to the shop by 15%",
+            "steps": [
+              "Pilot with one artist",
+              "Embed on artist page",
+              "Measure click-through in GA4"
+            ],
+            "owner": "Content Producer"
+          }
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "SEO & Content Engine",
+        "description": "Use thewynwoodwalls.com authority and storytelling to fill the top of funnel and pass demand to the shop.",
+        "focusPoints": [
+          "Create deep artist spotlight pages with commerce hooks",
+          "Build resource center for street art education and buyer guides",
+          "Connect museum and shop sites with reciprocal internal links",
+          "Improve site architecture with advanced filters and schema"
+        ],
+        "plays": [
+          {
+            "title": "Artist & Collection Hub Refresh",
+            "timeframe": "Weeks 1-3",
+            "owners": [
+              "SEO Strategist",
+              "Content Writer",
+              "Design Lead"
+            ],
+            "objectives": [
+              "Map top-performing museum pages to relevant shop collections",
+              "Launch enhanced artist bios with embedded product modules"
+            ],
+            "tasks": [
+              "Conduct keyword research for top artist names + \"shop\" intent",
+              "Add schema markup for products and events",
+              "Implement new cross-link blocks on 10 priority pages"
+            ],
+            "successSignals": [
+              "15% lift in referral sessions from museum site",
+              "Top 10 artist pages include commerce module"
+            ]
+          },
+          {
+            "title": "Seasonal Content Sprint",
+            "timeframe": "Monthly",
+            "owners": [
+              "Content Writer",
+              "Merchandising"
+            ],
+            "objectives": [
+              "Publish gift guides and wearable-art editorials tied to campaigns"
+            ],
+            "tasks": [
+              "Outline 6-8 gift guides",
+              "Publish blog + email hook",
+              "Add Pinterest-ready imagery"
+            ],
+            "successSignals": [
+              "Organic entrance sessions +20%",
+              "Gift guide assisted revenue tracked"
+            ]
+          }
+        ],
+        "enablement": [
+          {
+            "title": "Content Governance",
+            "description": "Ensure each article drives to collections and email capture.",
+            "items": [
+              "CTA component library",
+              "Editorial SEO checklist",
+              "Inventory alignment sheet for featured products"
+            ]
+          }
+        ],
+        "experiments": [
+          {
+            "title": "Interactive Mural Map",
+            "hypothesis": "Embedding an interactive mural map with shop CTAs will increase average session duration by 30%",
+            "steps": [
+              "Prototype map",
+              "Embed on museum site",
+              "Capture click analytics"
+            ],
+            "owner": "UX Designer"
+          }
+        ]
+      },
+      {
+        "id": "marketplaces",
+        "title": "Marketplace Expansion",
+        "description": "Activate Etsy, Amazon, and eBay as incremental revenue streams without cannibalizing the core store.",
+        "focusPoints": [
+          "Launch curated assortments with automated feed syncing",
+          "Standardize pricing, hero copy, and review collection",
+          "Build daily exception monitoring for inventory drift",
+          "Create cross-channel promotion loop back to owned site"
+        ],
+        "plays": [
+          {
+            "title": "Listing Launch Wave",
+            "timeframe": "Weeks 2-5",
+            "owners": [
+              "Marketplace Manager",
+              "VA Team"
+            ],
+            "objectives": [
+              "List All Active SKUs across channels",
+              "Hit $5-15K GMV target in first 90 days"
+            ],
+            "tasks": [
+              "Align data feed attributes for each marketplace",
+              "Enable Amazon review request automation",
+              "Craft Etsy storefront narrative featuring artists"
+            ],
+            "dependencies": [
+              "Feed management tooling",
+              "Photography assets"
+            ],
+            "successSignals": [
+              "<5% feed error rate",
+              "$10K GMV by week 6"
+            ]
+          },
+          {
+            "title": "Marketplace Promotion Loop",
+            "timeframe": "Monthly",
+            "owners": [
+              "Performance Marketer",
+              "Lifecycle Manager"
+            ],
+            "objectives": [
+              "Drive marketplace shoppers back to owned channels"
+            ],
+            "tasks": [
+              "Include insert cards with QR linking to shop exclusives",
+              "Run targeted remarketing audiences for purchasers"
+            ],
+            "successSignals": [
+              "25% of marketplace buyers join email list",
+              "Repeat purchase lift measured"
+            ]
+          }
+        ],
+        "enablement": [
+          {
+            "title": "Operational Backbone",
+            "description": "Keep catalog synchronized across all properties.",
+            "items": [
+              "Daily sync checklist",
+              "Marketplace SLA document",
+              "Zendesk macro for customer inquiries"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "performance",
+        "title": "Performance Marketing Lab",
+        "description": "Rebuild paid media with disciplined testing, rapid scaling, and channel diversification (Meta, Google, TikTok, YouTube).",
+        "focusPoints": [
+          "Operate test > learn > scale loops weekly",
+          "Stand up TikTok + YouTube prospecting while remarketing via Meta/Google",
+          "Use UGC and live shopping assets as creative inputs",
+          "Tie spend decisions to verified profit per artist/collection"
+        ],
+        "plays": [
+          {
+            "title": "Testing Matrix",
+            "timeframe": "Weekly",
+            "owners": [
+              "Performance Marketing Lead",
+              "Data Analyst"
+            ],
+            "objectives": [
+              "Evaluate 3 new creatives and 2 audiences per week",
+              "Reveal winning combinations within 72 hours"
+            ],
+            "tasks": [
+              "Build decision doc for creative testing",
+              "Launch YouTube & Shorts campaigns targeting art & culture enthusiasts",
+              "Apply negative keywords to trim wasted Google spend"
+            ],
+            "successSignals": [
+              "Cost per purchase within target",
+              "Scaling budget by 20% on winners"
+            ]
+          },
+          {
+            "title": "Offer Ladder Deployment",
+            "timeframe": "BFCM Season",
+            "owners": [
+              "Lifecycle Lead",
+              "Paid Media"
+            ],
+            "objectives": [
+              "Coordinate offers across email, paid social, and marketplaces"
+            ],
+            "tasks": [
+              "Publish discount matrix by audience tier",
+              "Sync creative variants across channels",
+              "Monitor ROAS daily and rebalance budget"
+            ],
+            "successSignals": [
+              "ROAS ≥350%",
+              "Email revenue share 10%+"
+            ]
+          }
+        ],
+        "enablement": [
+          {
+            "title": "Media Lab Toolkit",
+            "description": "Documentation and automations to support scale.",
+            "items": [
+              "Creative testing scorecard",
+              "Budget pacing dashboard",
+              "YouTube & Shorts creative playbook"
+            ]
+          }
+        ],
+        "experiments": [
+          {
+            "title": "YouTube Shorts Prospecting",
+            "hypothesis": "YouTube Shorts with artist-focused content will yield <$40 CAC targeting art enthusiasts and collectors",
+            "steps": [
+              "Launch small pilot with 5-10 Shorts creatives",
+              "Review CPV and CAC after 7 days",
+              "Scale winners or pivot creative approach"
+            ],
+            "owner": "Performance Marketing Lead"
+          }
+        ]
+      },
+      {
+        "id": "fashion",
+        "title": "Fashion Brand Building",
+        "description": "Elevate wearable art as a premium line with storytelling, wholesale pilots, and experiential activations.",
+        "focusPoints": [
+          "Develop cohesive brand identity and lookbook",
+          "Create hype-driven launch cadence with 90-day runway",
+          "Secure wholesale and pop-up placements",
+          "Translate physical experiences to digital drops"
+        ],
+        "plays": [
+          {
+            "title": "Brand Framework Sprint",
+            "timeframe": "Weeks 0-2",
+            "owners": [
+              "Creative Director",
+              "Fashion Product Lead"
+            ],
+            "objectives": [
+              "Define positioning, voice, and capsule roadmap"
+            ],
+            "tasks": [
+              "Produce wearable art manifesto",
+              "Design lookbook + campaign visuals",
+              "Draft pitch deck for wholesale conversations"
+            ],
+            "successSignals": [
+              "Brand guide approved",
+              "Wholesale deck ready"
+            ]
+          },
+          {
+            "title": "Launch SOP Execution",
+            "timeframe": "90-day rolling",
+            "owners": [
+              "Marketing Director",
+              "Lifecycle Lead",
+              "Performance Lead"
+            ],
+            "objectives": [
+              "Run hype, pre-order, launch, and sustain phases for each drop"
+            ],
+            "tasks": [
+              "60-day tease campaign with artist interviews",
+              "30-day pre-order window with limited units",
+              "Launch-day live shopping show and remarketing"
+            ],
+            "dependencies": [
+              "Artist content",
+              "Inventory plan"
+            ],
+            "successSignals": [
+              "Sell-through >80% per drop",
+              "Press and influencer coverage secured"
+            ]
+          }
+        ],
+        "enablement": [
+          {
+            "title": "Experience Extension",
+            "description": "Bridge physical Wynwood Walls experiences with digital commerce.",
+            "items": [
+              "QR codes at murals linking to product stories",
+              "Pop-up playbook for fashion events",
+              "Artist residency calendar feeding product pipeline"
+            ]
+          }
+        ],
+        "experiments": [
+          {
+            "title": "Augmented Reality Try-On",
+            "hypothesis": "Allowing shoppers to visualize wearable art via AR will boost conversion by 5%",
+            "steps": [
+              "Prototype AR filter",
+              "Pilot with top SKU",
+              "Measure conversion impact"
+            ],
+            "owner": "Innovation Lead"
+          }
+        ]
+      }
+    ],
+    "cadence": [
+      {
+        "horizon": "Immediate (Week 0-2)",
+        "focus": "Measurement repair, narrative alignment, and first content surge",
+        "parallelStreams": [
+          "Measurement engineers fix GA4 + feeds",
+          "Content team drafts artist spotlights",
+          "Social team launches wearable-art teaser"
+        ]
+      },
+      {
+        "horizon": "Near-Term (Weeks 3-6)",
+        "focus": "Channel activation across social, SEO, and marketplaces",
+        "parallelStreams": [
+          "Marketplace squad publishes curated inventory",
+          "SEO squad deploys artist hubs + gift guides",
+          "Performance squad runs testing matrix"
+        ]
+      },
+      {
+        "horizon": "Seasonal (Quarterly)",
+        "focus": "Fashion capsule launches, experiential partnerships, community expansion",
+        "parallelStreams": [
+          "Fashion team executes launch SOP",
+          "Influencer/PR team books collaborations and pop-ups",
+          "Lifecycle team scales automation and retention offers"
+        ]
+      }
+    ]
+  },
+  "teamReviews": [
+    {
+      "name": "Alejandro Trujillo",
+      "currentRole": "E-Commerce Director",
+      "recommendedRole": "E-Commerce Operations Manager",
+      "summary": "Highly dedicated and technically capable professional whose attention to detail keeps the online business running reliably. However, current performance aligns more closely with Digital Commerce Manager than strategic director level. Lacks strategic fluency and leadership leverage typically required of director-level position.",
+      "strengths": [
+        "Technical Proficiency – Solid command of Shopify, Lightspeed, and related systems; however very basic working knowledge of Google and Meta Ads",
+        "Hands-On Problem Solving – Dependable troubleshooter maintaining business continuity",
+        "Process Awareness – Understands complete operational flow from inventory to checkout",
+        "Adaptability – Open to testing and implementing new tools, including AI and automation"
+      ],
+      "gaps": [
+        "Strategic Growth Skills – Effective executor but not fluent in funnel design, audience segmentation, or growth modeling",
+        "Campaign Management – Fragmented, overlapping campaigns misaligned with buyer journey",
+        "Analytical Insight – Uses tools but doesn't translate findings into actionable direction",
+        "Delegation & Leadership – Handles nearly every task personally, no SOPs or delegation",
+        "Cross-Department Collaboration – Limited coordination with creative and marketing teams",
+        "Brand Positioning – Missing focus on market positioning and storytelling opportunity"
+      ],
+      "competencies": [
+        {
+          "area": "Platform Management",
+          "rating": 5,
+          "description": "Excellent execution; system stability relies on hands-on management"
+        },
+        {
+          "area": "Campaign Management",
+          "rating": 2,
+          "description": "Disorganized structure, limited testing, under-optimized targeting"
+        },
+        {
+          "area": "Strategic Planning",
+          "rating": 2,
+          "description": "Operates reactively; no documented growth roadmap or campaign hierarchy"
+        },
+        {
+          "area": "Delegation & SOPs",
+          "rating": 2,
+          "description": "Lack of workload orchestration & delegation; no SOPs or delegation"
+        },
+        {
+          "area": "Brand & Marketing Understanding",
+          "rating": 2,
+          "description": "Views e-commerce as transactional, not experiential"
+        },
+        {
+          "area": "Technical Skills",
+          "rating": 3,
+          "description": "Basic coding and systems integration capabilities, implementing AI and tools"
+        }
+      ],
+      "developmentPriorities": [
+        "Strategic Marketing Depth – Expand knowledge of funnel marketing and campaign sequencing",
+        "Systemization & Delegation – Implement SOPs and delegate routine workflows",
+        "Focus & Scope – Concentrate exclusively on e-commerce growth levers",
+        "Cross-Team Integration – Strengthen collaboration with creative and brand teams",
+        "Knowledge Documentation – Capture and formalize internal workflows for continuity"
+      ]
+    }
+  ]
+}

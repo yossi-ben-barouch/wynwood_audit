@@ -1,5 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import { ErrorState } from "@/components/error-state";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -8,7 +14,12 @@ import { Users, Mail, Briefcase, AlertCircle } from "lucide-react";
 
 export default function OrganizationalStructure() {
   const { data, isLoading, error, refetch } = useQuery<OrganizationalData>({
-    queryKey: ['/api/organizational-structure'],
+    queryKey: ["/data/organizational-structure"],
+    queryFn: async () => {
+      const res = await fetch("/data/organizational-structure.json");
+      if (!res.ok) throw new Error("Failed to fetch organizational structure");
+      return res.json();
+    },
   });
 
   if (isLoading) {
@@ -32,9 +43,9 @@ export default function OrganizationalStructure() {
 
   const getInitials = (name: string) => {
     return name
-      .split(' ')
-      .map(n => n[0])
-      .join('')
+      .split(" ")
+      .map((n) => n[0])
+      .join("")
       .toUpperCase()
       .slice(0, 2);
   };
@@ -44,11 +55,15 @@ export default function OrganizationalStructure() {
       <div className="max-w-7xl mx-auto px-8 py-6 space-y-8">
         {/* Header */}
         <div className="space-y-2">
-          <h1 className="text-3xl font-semibold text-foreground" data-testid="text-page-title">
+          <h1
+            className="text-3xl font-semibold text-foreground"
+            data-testid="text-page-title"
+          >
             Organizational Structure
           </h1>
           <p className="text-base text-muted-foreground">
-            Key personnel, roles, and structural challenges within the Wynwood Walls team
+            Key personnel, roles, and structural challenges within the Wynwood
+            Walls team
           </p>
         </div>
 
@@ -59,9 +74,12 @@ export default function OrganizationalStructure() {
               <div className="flex items-start gap-4">
                 <AlertCircle className="w-6 h-6 text-destructive mt-1" />
                 <div>
-                  <CardTitle className="text-xl mb-2 text-destructive">Structural Challenges</CardTitle>
+                  <CardTitle className="text-xl mb-2 text-destructive">
+                    Structural Challenges
+                  </CardTitle>
                   <CardDescription className="text-base">
-                    Critical gaps identified in the current organizational structure
+                    Critical gaps identified in the current organizational
+                    structure
                   </CardDescription>
                 </div>
               </div>
@@ -82,7 +100,11 @@ export default function OrganizationalStructure() {
         {/* Team Members Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {data?.teamMembers.map((member) => (
-            <Card key={member.id} className="hover-elevate" data-testid={`card-team-member-${member.id}`}>
+            <Card
+              key={member.id}
+              className="hover-elevate"
+              data-testid={`card-team-member-${member.id}`}
+            >
               <CardHeader className="space-y-4">
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12">
@@ -94,7 +116,9 @@ export default function OrganizationalStructure() {
                     <h3 className="font-semibold text-lg text-foreground truncate">
                       {member.name}
                     </h3>
-                    <p className="text-sm text-primary font-medium">{member.role}</p>
+                    <p className="text-sm text-primary font-medium">
+                      {member.role}
+                    </p>
                     <p className="text-xs text-muted-foreground mt-1 flex items-center gap-1.5">
                       <Briefcase className="w-3 h-3" />
                       {member.department}
@@ -121,7 +145,11 @@ export default function OrganizationalStructure() {
                   <div className="pt-2 border-t border-border">
                     <div className="flex flex-wrap gap-2">
                       {member.strengths.slice(0, 3).map((strength, index) => (
-                        <Badge key={index} variant="secondary" className="text-xs">
+                        <Badge
+                          key={index}
+                          variant="secondary"
+                          className="text-xs"
+                        >
                           {strength}
                         </Badge>
                       ))}

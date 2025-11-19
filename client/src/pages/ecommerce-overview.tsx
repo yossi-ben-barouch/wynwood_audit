@@ -35,7 +35,12 @@ export default function EcommerceOverview() {
     error,
     refetch,
   } = useQuery<MarketingStrategy>({
-    queryKey: ["/api/marketing-strategy"],
+    queryKey: ["/data/marketing-strategy"],
+    queryFn: async () => {
+      const res = await fetch("/data/marketing-strategy.json");
+      if (!res.ok) throw new Error("Failed to fetch marketing strategy");
+      return res.json();
+    },
   });
 
   if (isLoading) {

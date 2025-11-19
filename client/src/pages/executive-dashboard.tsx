@@ -30,7 +30,12 @@ export default function ExecutiveDashboard() {
     error,
     refetch,
   } = useQuery<ExecutiveSummary>({
-    queryKey: ["/api/executive-summary"],
+    queryKey: ["/data/executive-summary"],
+    queryFn: async () => {
+      const res = await fetch("/data/executive-summary.json");
+      if (!res.ok) throw new Error("Failed to fetch executive summary");
+      return res.json();
+    },
   });
 
   if (isLoading) {

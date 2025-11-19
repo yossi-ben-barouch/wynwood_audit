@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Alejandro Trujillo",
+    "currentRole": "E-Commerce Director",
+    "recommendedRole": "E-Commerce Operations Manager",
+    "summary": "Highly dedicated and technically capable professional whose attention to detail keeps the online business running reliably. However, current performance aligns more closely with Digital Commerce Manager than strategic director level. Lacks strategic fluency and leadership leverage typically required of director-level position.",
+    "strengths": [
+      "Technical Proficiency – Solid command of Shopify, Lightspeed, and related systems; however very basic working knowledge of Google and Meta Ads",
+      "Hands-On Problem Solving – Dependable troubleshooter maintaining business continuity",
+      "Process Awareness – Understands complete operational flow from inventory to checkout",
+      "Adaptability – Open to testing and implementing new tools, including AI and automation"
+    ],
+    "gaps": [
+      "Strategic Growth Skills – Effective executor but not fluent in funnel design, audience segmentation, or growth modeling",
+      "Campaign Management – Fragmented, overlapping campaigns misaligned with buyer journey",
+      "Analytical Insight – Uses tools but doesn't translate findings into actionable direction",
+      "Delegation & Leadership – Handles nearly every task personally, no SOPs or delegation",
+      "Cross-Department Collaboration – Limited coordination with creative and marketing teams",
+      "Brand Positioning – Missing focus on market positioning and storytelling opportunity"
+    ],
+    "competencies": [
+      {
+        "area": "Platform Management",
+        "rating": 5,
+        "description": "Excellent execution; system stability relies on hands-on management"
+      },
+      {
+        "area": "Campaign Management",
+        "rating": 2,
+        "description": "Disorganized structure, limited testing, under-optimized targeting"
+      },
+      {
+        "area": "Strategic Planning",
+        "rating": 2,
+        "description": "Operates reactively; no documented growth roadmap or campaign hierarchy"
+      },
+      {
+        "area": "Delegation & SOPs",
+        "rating": 2,
+        "description": "Lack of workload orchestration & delegation; no SOPs or delegation"
+      },
+      {
+        "area": "Brand & Marketing Understanding",
+        "rating": 2,
+        "description": "Views e-commerce as transactional, not experiential"
+      },
+      {
+        "area": "Technical Skills",
+        "rating": 3,
+        "description": "Basic coding and systems integration capabilities, implementing AI and tools"
+      }
+    ],
+    "developmentPriorities": [
+      "Strategic Marketing Depth – Expand knowledge of funnel marketing and campaign sequencing",
+      "Systemization & Delegation – Implement SOPs and delegate routine workflows",
+      "Focus & Scope – Concentrate exclusively on e-commerce growth levers",
+      "Cross-Team Integration – Strengthen collaboration with creative and brand teams",
+      "Knowledge Documentation – Capture and formalize internal workflows for continuity"
+    ]
+  }
+]
