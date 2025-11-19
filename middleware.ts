@@ -10,35 +10,37 @@ function isAuthorized(request: Request): boolean {
 
   let decoded: string;
   try {
-    // atob is available in the Edge-style runtime
     decoded = atob(base64);
   } catch {
     return false;
   }
 
   const [user, pass] = decoded.split(":");
+
+  // If env vars aren't set, fail safe (never allow)
+  if (!BASIC_USER || !BASIC_PASS) return false;
+
   return user === BASIC_USER && pass === BASIC_PASS;
 }
 
-// This function runs before your static Vite build on every request
 export default function middleware(request: Request) {
   const url = new URL(request.url);
 
-  // Allow static assets and some public files through without auth
+  // Let static assets & some public files through
   if (
-    url.pathname.startsWith("/assets") ||
+    url.pathname.startsWith("/assets") || // Vite build output
     url.pathname.startsWith("/favicon") ||
     url.pathname === "/robots.txt"
   ) {
     return;
   }
 
-  // If already authorized, continue to the site
+  // If credentials are valid, continue to site
   if (isAuthorized(request)) {
     return;
   }
 
-  // Otherwise, ask browser for Basic Auth credentials
+  // Otherwise prompt for Basic Auth
   return new Response("Authentication required", {
     status: 401,
     headers: {
