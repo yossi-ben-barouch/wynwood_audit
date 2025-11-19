@@ -1,18 +1,16 @@
-import type { VercelRequest, VercelResponse } from "@vercel/node";
-
 const BASIC_USER = process.env.BASIC_AUTH_USER;
 const BASIC_PASS = process.env.BASIC_AUTH_PASSWORD;
 const REALM = "Audit Dashboard";
 
-function isAuthorized(req: VercelRequest): boolean {
-  const auth = req.headers.authorization;
+function isAuthorized(request) {
+  const auth = request.headers.get("authorization");
   if (!auth || !auth.startsWith("Basic ")) return false;
 
   const base64 = auth.slice("Basic ".length).trim();
 
-  let decoded: string;
+  let decoded;
   try {
-    decoded = Buffer.from(base64, "base64").toString("utf-8");
+    decoded = atob(base64);
   } catch {
     return false;
   }
@@ -25,28 +23,35 @@ function isAuthorized(req: VercelRequest): boolean {
   return user === BASIC_USER && pass === BASIC_PASS;
 }
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
-  const url = new URL(req.url);
+export function middleware(request) {
+  const url = new URL(request.url);
 
   // Let static assets & some public files through
   if (
-    url.pathname.startsWith("/assets") ||
+    url.pathname.startsWith("/assets/") ||
     url.pathname.startsWith("/favicon") ||
-    url.pathname === "/robots.txt"
+    url.pathname === "/robots.txt" ||
+    url.pathname.startsWith("/data/")
   ) {
     return;
   }
 
-  // If credentials are valid, serve the requested file
-  if (isAuthorized(req)) {
+  // If credentials are valid, continue to site
+  if (isAuthorized(request)) {
     return;
   }
 
   // Otherwise prompt for Basic Auth
-  res.setHeader("WWW-Authenticate", `Basic realm="${REALM}"`);
-  res.status(401).send("Authentication required");
+  return new Response("Authentication required", {
+    status: 401,
+    headers: {
+      "WWW-Authenticate": `Basic realm="${REALM}"`,
+    },
+  });
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|assets/).*)"],
+  matcher: [
+    "/((?!_next/static|_next/image|favicon|assets/|data/).*)",
+  ],
 };
