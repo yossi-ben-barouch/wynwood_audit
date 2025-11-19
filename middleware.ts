@@ -53,9 +53,11 @@ export const config = {
   matcher: [
     /*
      * Match all request paths except for the ones starting with:
+     * - _next/static (system files)
+     * - _next/image (image optimization)
+     * - favicon.ico (favicon)
      * - assets (Vite build output)
-     * - favicon
      */
-    "/((?!assets|favicon).*)",
+    "/((?!_next/static|_next/image|favicon.ico|assets/).*)",
   ],
 };
