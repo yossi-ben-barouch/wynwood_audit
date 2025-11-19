@@ -1,13 +1,5 @@
 {
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "middleware": [
-    {
-      "path": "/(.*)"
-    }
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
