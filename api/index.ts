@@ -1,8 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { createHmac } from "crypto";
-import { auditData } from "../server/data/audit-data";
-import { promotionAudit } from "../server/data/promotion-audit";
-import { platformReviewData } from "../server/data/Audit/platform-review";
 
 const AUTH_PASSWORD = process.env.AUTH_PASSWORD || "changeme";
 const SESSION_SECRET =
@@ -119,42 +116,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(200).json({ authenticated });
   }
 
-  // Check auth for protected routes
-  if (!verifyAuthToken(token)) {
-    return res.status(401).json({ message: "Unauthorized" });
-  }
-
-  // Protected data endpoints
-  if (path === "/executive-summary" && method === "GET") {
-    return res.status(200).json(auditData.executiveSummary);
-  }
-  if (path === "/organizational-structure" && method === "GET") {
-    return res.status(200).json(auditData.organizational);
-  }
-  if (path === "/current-state" && method === "GET") {
-    return res.status(200).json(auditData.currentState);
-  }
-  if (path === "/problems" && method === "GET") {
-    return res.status(200).json(auditData.problems);
-  }
-  if (path === "/recommendations" && method === "GET") {
-    return res.status(200).json(auditData.recommendations);
-  }
-  if (path === "/marketing-strategy" && method === "GET") {
-    return res.status(200).json(auditData.marketingStrategy);
-  }
-  if (path === "/promotion-audit" && method === "GET") {
-    return res.status(200).json(promotionAudit);
-  }
-  if (path === "/platform-review" && method === "GET") {
-    return res.status(200).json(platformReviewData);
-  }
-  if (path === "/team-reviews" && method === "GET") {
-    return res.status(200).json(auditData.teamReviews);
-  }
-  if (path === "/audit-data" && method === "GET") {
-    return res.status(200).json(auditData);
-  }
-
+  // All other routes - not found
   return res.status(404).json({ message: "Not found" });
 }
