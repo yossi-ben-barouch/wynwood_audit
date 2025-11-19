@@ -43,7 +43,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Auth endpoints
-app.post("/api/auth/login", (req, res) => {
+app.post("/auth/login", (req, res) => {
   const { password } = req.body;
   if (password === AUTH_PASSWORD) {
     const token = createAuthToken();
@@ -60,12 +60,12 @@ app.post("/api/auth/login", (req, res) => {
   }
 });
 
-app.post("/api/auth/logout", (req, res) => {
+app.post("/auth/logout", (req, res) => {
   res.clearCookie("auth_token", { path: "/" });
   res.json({ success: true, message: "Logged out successfully" });
 });
 
-app.get("/api/auth/status", (req, res) => {
+app.get("/auth/status", (req, res) => {
   const token = req.cookies?.auth_token;
   const authenticated = verifyAuthToken(token);
   res.json({ authenticated });
@@ -85,43 +85,43 @@ const requireAuth = (
 };
 
 // Protected data endpoints
-app.get("/api/executive-summary", requireAuth, (_req, res) => {
+app.get("/executive-summary", requireAuth, (_req, res) => {
   res.json(auditData.executiveSummary);
 });
 
-app.get("/api/organizational-structure", requireAuth, (_req, res) => {
+app.get("/organizational-structure", requireAuth, (_req, res) => {
   res.json(auditData.organizational);
 });
 
-app.get("/api/current-state", requireAuth, (_req, res) => {
+app.get("/current-state", requireAuth, (_req, res) => {
   res.json(auditData.currentState);
 });
 
-app.get("/api/problems", requireAuth, (_req, res) => {
+app.get("/problems", requireAuth, (_req, res) => {
   res.json(auditData.problems);
 });
 
-app.get("/api/recommendations", requireAuth, (_req, res) => {
+app.get("/recommendations", requireAuth, (_req, res) => {
   res.json(auditData.recommendations);
 });
 
-app.get("/api/marketing-strategy", requireAuth, (_req, res) => {
+app.get("/marketing-strategy", requireAuth, (_req, res) => {
   res.json(auditData.marketingStrategy);
 });
 
-app.get("/api/promotion-audit", requireAuth, (_req, res) => {
+app.get("/promotion-audit", requireAuth, (_req, res) => {
   res.json(promotionAudit);
 });
 
-app.get("/api/platform-review", requireAuth, (_req, res) => {
+app.get("/platform-review", requireAuth, (_req, res) => {
   res.json(platformReviewData);
 });
 
-app.get("/api/team-reviews", requireAuth, (_req, res) => {
+app.get("/team-reviews", requireAuth, (_req, res) => {
   res.json(auditData.teamReviews);
 });
 
-app.get("/api/audit-data", requireAuth, (_req, res) => {
+app.get("/audit-data", requireAuth, (_req, res) => {
   res.json(auditData);
 });
 
