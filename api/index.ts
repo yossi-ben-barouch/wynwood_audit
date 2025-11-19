@@ -1,5 +1,6 @@
 import express from "express";
-import session from "express-session";
+import cookieParser from "cookie-parser";
+import { createHmac } from "crypto";
 import { auditData } from "../server/data/audit-data";
 import { promotionAudit } from "../server/data/promotion-audit";
 import { platformReviewData } from "../server/data/Audit/platform-review";
@@ -10,33 +11,49 @@ const AUTH_PASSWORD = process.env.AUTH_PASSWORD || "changeme";
 const SESSION_SECRET =
   process.env.SESSION_SECRET || "your-secret-key-change-this";
 
-// Extend session data type
-declare module "express-session" {
-  interface SessionData {
-    authenticated?: boolean;
-  }
+// Helper to create signed token
+function createAuthToken(): string {
+  const timestamp = Date.now();
+  const expiresAt = timestamp + 24 * 60 * 60 * 1000; // 24 hours
+  const payload = `${expiresAt}`;
+  const signature = createHmac("sha256", SESSION_SECRET)
+    .update(payload)
+    .digest("hex");
+  return `${payload}.${signature}`;
+}
+
+// Helper to verify token
+function verifyAuthToken(token: string): boolean {
+  if (!token) return false;
+  const [payload, signature] = token.split(".");
+  if (!payload || !signature) return false;
+
+  const expectedSignature = createHmac("sha256", SESSION_SECRET)
+    .update(payload)
+    .digest("hex");
+
+  if (signature !== expectedSignature) return false;
+
+  const expiresAt = parseInt(payload, 10);
+  return Date.now() < expiresAt;
 }
 
 // Middleware
 app.use(express.json());
-app.use(
-  session({
-    secret: SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
-    cookie: {
-      secure: process.env.NODE_ENV === "production",
-      httpOnly: true,
-      maxAge: 24 * 60 * 60 * 1000, // 24 hours
-    },
-  })
-);
+app.use(cookieParser());
 
 // Auth endpoints
 app.post("/api/auth/login", (req, res) => {
   const { password } = req.body;
   if (password === AUTH_PASSWORD) {
-    req.session.authenticated = true;
+    const token = createAuthToken();
+    res.cookie("auth_token", token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      maxAge: 24 * 60 * 60 * 1000, // 24 hours
+      path: "/",
+    });
     res.json({ success: true, message: "Login successful" });
   } else {
     res.status(401).json({ success: false, message: "Invalid password" });
@@ -44,16 +61,14 @@ app.post("/api/auth/login", (req, res) => {
 });
 
 app.post("/api/auth/logout", (req, res) => {
-  req.session.destroy((err) => {
-    if (err) {
-      return res.status(500).json({ success: false, message: "Logout failed" });
-    }
-    res.json({ success: true, message: "Logged out successfully" });
-  });
+  res.clearCookie("auth_token", { path: "/" });
+  res.json({ success: true, message: "Logged out successfully" });
 });
 
 app.get("/api/auth/status", (req, res) => {
-  res.json({ authenticated: !!req.session.authenticated });
+  const token = req.cookies?.auth_token;
+  const authenticated = verifyAuthToken(token);
+  res.json({ authenticated });
 });
 
 // Auth middleware
@@ -62,7 +77,8 @@ const requireAuth = (
   res: express.Response,
   next: express.NextFunction
 ) => {
-  if (req.session.authenticated) {
+  const token = req.cookies?.auth_token;
+  if (verifyAuthToken(token)) {
     return next();
   }
   res.status(401).json({ message: "Unauthorized" });
