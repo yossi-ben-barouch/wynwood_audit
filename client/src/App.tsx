@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
+import { AuthGuard } from "@/components/AuthGuard";
 import ExecutiveDashboard from "@/pages/executive-dashboard";
 import OrganizationalStructure from "@/pages/organizational-structure";
 import CurrentStateAssessment from "@/pages/current-state";
@@ -76,24 +77,26 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <SidebarProvider style={style as React.CSSProperties}>
-          <div className="flex h-screen w-full">
-            <AppSidebar />
-            <div className="flex flex-col flex-1">
-              <header className="flex items-center justify-between p-4 border-b border-border bg-background">
-                <SidebarTrigger data-testid="button-sidebar-toggle" />
-                <div className="flex items-center gap-2">
-                  <span className="text-sm text-muted-foreground">
-                    October 2025
-                  </span>
-                </div>
-              </header>
-              <main className="flex-1 min-h-0 overflow-y-auto">
-                <Router />
-              </main>
+        <AuthGuard>
+          <SidebarProvider style={style as React.CSSProperties}>
+            <div className="flex h-screen w-full">
+              <AppSidebar />
+              <div className="flex flex-col flex-1">
+                <header className="flex items-center justify-between p-4 border-b border-border bg-background">
+                  <SidebarTrigger data-testid="button-sidebar-toggle" />
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-muted-foreground">
+                      October 2025
+                    </span>
+                  </div>
+                </header>
+                <main className="flex-1 min-h-0 overflow-y-auto">
+                  <Router />
+                </main>
+              </div>
             </div>
-          </div>
-        </SidebarProvider>
+          </SidebarProvider>
+        </AuthGuard>
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>

@@ -9,7 +9,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Audit Data API Routes
 
   // Executive Summary
-  app.get("/api/executive-summary", (_req, res) => {
+  app.get("/api/executive-summary", requireAuth, (_req, res) => {
     res.json(auditData.executiveSummary);
   });
 
