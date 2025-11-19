@@ -4,7 +4,7 @@ export const executiveSummaryData: ExecutiveSummary = {
   keyFinding:
     "The shop's online sales are underperforming despite having world-class assets (high domain authority, quality products, significant foot traffic), primarily due to fragmented marketing efforts, resource constraints, and misalignment between product development and digital marketing strategies.",
   overview: [
-    "Strong foundational assets: Domain Authority of 47-72, exclusive artist relationships, and 250K monthly museum visitors",
+    "Strong foundational assets: Domain Authority of 47-72, exclusive artist relationships, and 25K monthly museum visitors",
     "Significant execution challenges limiting online revenue growth despite 200% growth in years 1-2",
     "Current year showing 10% decline attributed to tariffs and supplier instability",
     "Critical gap: Alejandro (E-Commerce Director) stretched across 4 websites with minimal support",
@@ -14,7 +14,7 @@ export const executiveSummaryData: ExecutiveSummary = {
   criticalMetrics: [
     {
       label: "Museum Monthly Traffic",
-      value: "250K",
+      value: "25K",
       trend: 12,
       trendDirection: "up" as const,
     },

@@ -98,7 +98,7 @@ export default function CurrentStateAssessment() {
               />
               <KPICard
                 label="Monthly Traffic"
-                value="250K"
+                value="25K"
                 trend={12}
                 trendDirection="up"
               />

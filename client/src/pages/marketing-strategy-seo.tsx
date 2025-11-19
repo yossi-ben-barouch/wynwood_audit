@@ -1,21 +1,27 @@
 import { useMarketingStrategyQuery } from "@/pages/marketing-strategy";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
+import {
   AlertCircle,
-  BarChart3, 
-  CheckCircle2, 
+  BarChart3,
+  CheckCircle2,
   ExternalLink,
   FileText,
   Globe,
-  Lightbulb, 
+  Lightbulb,
   Link2,
   Search,
   Sparkles,
-  Target, 
-  TrendingUp, 
-  Users, 
-  Zap 
+  Target,
+  TrendingUp,
+  Users,
+  Zap,
 } from "lucide-react";
 
 export default function SEOStrategyPage() {
@@ -72,7 +78,7 @@ export default function SEOStrategyPage() {
     },
     {
       metric: "Museum Traffic",
-      value: "250K/mo",
+      value: "25K/mo",
       description: "Untapped for shop",
       icon: <TrendingUp className="h-4 w-4 text-purple-600" />,
     },
@@ -87,31 +93,51 @@ export default function SEOStrategyPage() {
   const keywordCategories = [
     {
       category: "Brand Keywords",
-      examples: ["Wynwood Walls shop", "Wynwood Walls merchandise", "Official Wynwood Walls store"],
+      examples: [
+        "Wynwood Walls shop",
+        "Wynwood Walls merchandise",
+        "Official Wynwood Walls store",
+      ],
       intent: "High intent, brand awareness",
       color: "blue",
     },
     {
       category: "Artist-Specific",
-      examples: ["[Artist] prints", "[Artist] Wynwood collection", "Art by [Artist]"],
+      examples: [
+        "[Artist] prints",
+        "[Artist] Wynwood collection",
+        "Art by [Artist]",
+      ],
       intent: "High conversion, fan-driven",
       color: "purple",
     },
     {
       category: "Product Keywords",
-      examples: ["Street art t-shirts", "Limited edition art prints", "Collectible art toys"],
+      examples: [
+        "Street art t-shirts",
+        "Limited edition art prints",
+        "Collectible art toys",
+      ],
       intent: "Transactional",
       color: "green",
     },
     {
       category: "Gift-Oriented",
-      examples: ["Unique art gifts", "Gifts for street art lovers", "Creative gift ideas"],
+      examples: [
+        "Unique art gifts",
+        "Gifts for street art lovers",
+        "Creative gift ideas",
+      ],
       intent: "Seasonal, high-value",
       color: "pink",
     },
     {
       category: "Educational/Info",
-      examples: ["History of street art", "Famous street artists", "Street art techniques"],
+      examples: [
+        "History of street art",
+        "Famous street artists",
+        "Street art techniques",
+      ],
       intent: "Top-of-funnel, authority",
       color: "orange",
     },
@@ -124,19 +150,21 @@ export default function SEOStrategyPage() {
         <div className="relative mb-16 overflow-hidden rounded-3xl border border-green-500/20 bg-gradient-to-br from-green-500/10 via-background to-blue-500/10 p-12 shadow-2xl">
           <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-green-500/20 blur-3xl" />
           <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl" />
-          
+
           <div className="relative z-10">
             <div className="mb-4 flex items-center gap-3">
               <div className="rounded-xl bg-green-500/20 p-3">
                 <Search className="h-8 w-8 text-green-600" />
               </div>
-              <Badge variant="outline" className="text-sm">Organic Growth Engine</Badge>
+              <Badge variant="outline" className="text-sm">
+                Organic Growth Engine
+              </Badge>
             </div>
-            
+
             <h1 className="mb-4 text-5xl font-bold tracking-tight text-foreground">
               SEO & Content Engine
             </h1>
-            
+
             <p className="max-w-3xl text-lg text-muted-foreground">
               {section.description}
             </p>
@@ -154,8 +182,12 @@ export default function SEOStrategyPage() {
                     </span>
                     {opp.icon}
                   </div>
-                  <div className="text-2xl font-bold text-foreground">{opp.value}</div>
-                  <div className="text-xs text-muted-foreground">{opp.description}</div>
+                  <div className="text-2xl font-bold text-foreground">
+                    {opp.value}
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    {opp.description}
+                  </div>
                 </div>
               ))}
             </div>
@@ -168,7 +200,9 @@ export default function SEOStrategyPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-red-600/10 text-red-600">
               <AlertCircle className="h-5 w-5" />
             </div>
-            <h2 className="text-3xl font-bold tracking-tight">Critical Missed Opportunity</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Critical Missed Opportunity
+            </h2>
           </div>
 
           <Card className="border-2 border-red-200/50 bg-gradient-to-br from-red-50/50 to-background dark:from-red-950/20">
@@ -178,7 +212,8 @@ export default function SEOStrategyPage() {
                 Museum → Shop Disconnect
               </CardTitle>
               <CardDescription>
-                High-ranking artist pages on thewynwoodwalls.com (DR 72) don't display shop products
+                High-ranking artist pages on thewynwoodwalls.com (DR 72) don't
+                display shop products
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -188,7 +223,8 @@ export default function SEOStrategyPage() {
                     The Problem
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Artist pages rank #1-2 on Google but have zero product links to shop
+                    Artist pages rank #1-2 on Google but have zero product links
+                    to shop
                   </p>
                 </div>
                 <div className="rounded-lg border border-amber-200/50 bg-amber-50/30 p-4 dark:bg-amber-950/20">
@@ -196,7 +232,7 @@ export default function SEOStrategyPage() {
                     The Cost
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    250K monthly museum visitors never see shop merchandise
+                    25K monthly museum visitors never see shop merchandise
                   </p>
                 </div>
                 <div className="rounded-lg border border-green-200/50 bg-green-50/30 p-4 dark:bg-green-950/20">
@@ -204,7 +240,8 @@ export default function SEOStrategyPage() {
                     The Solution
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Embed product modules on top 10 artist pages (see plays below)
+                    Embed product modules on top 10 artist pages (see plays
+                    below)
                   </p>
                 </div>
               </div>
@@ -215,15 +252,23 @@ export default function SEOStrategyPage() {
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-blue-600" />
-                    <span>Leverage existing #1-2 rankings instead of building from scratch</span>
+                    <span>
+                      Leverage existing #1-2 rankings instead of building from
+                      scratch
+                    </span>
                   </li>
                   <li className="flex gap-2">
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-blue-600" />
-                    <span>Pass authority from DR 72 site to shop via internal links</span>
+                    <span>
+                      Pass authority from DR 72 site to shop via internal links
+                    </span>
                   </li>
                   <li className="flex gap-2">
                     <CheckCircle2 className="h-4 w-4 shrink-0 text-blue-600" />
-                    <span>Convert art enthusiasts into buyers at peak interest moment</span>
+                    <span>
+                      Convert art enthusiasts into buyers at peak interest
+                      moment
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -237,33 +282,66 @@ export default function SEOStrategyPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600/10 text-purple-600">
               <FileText className="h-5 w-5" />
             </div>
-            <h2 className="text-3xl font-bold tracking-tight">Keyword Strategy Framework</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Keyword Strategy Framework
+            </h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {keywordCategories.map((cat, index) => {
               const colorClasses = {
-                blue: { border: "border-blue-200/50", bg: "bg-blue-50/50 dark:bg-blue-950/20", icon: "text-blue-600" },
-                purple: { border: "border-purple-200/50", bg: "bg-purple-50/50 dark:bg-purple-950/20", icon: "text-purple-600" },
-                green: { border: "border-green-200/50", bg: "bg-green-50/50 dark:bg-green-950/20", icon: "text-green-600" },
-                pink: { border: "border-pink-200/50", bg: "bg-pink-50/50 dark:bg-pink-950/20", icon: "text-pink-600" },
-                orange: { border: "border-orange-200/50", bg: "bg-orange-50/50 dark:bg-orange-950/20", icon: "text-orange-600" },
+                blue: {
+                  border: "border-blue-200/50",
+                  bg: "bg-blue-50/50 dark:bg-blue-950/20",
+                  icon: "text-blue-600",
+                },
+                purple: {
+                  border: "border-purple-200/50",
+                  bg: "bg-purple-50/50 dark:bg-purple-950/20",
+                  icon: "text-purple-600",
+                },
+                green: {
+                  border: "border-green-200/50",
+                  bg: "bg-green-50/50 dark:bg-green-950/20",
+                  icon: "text-green-600",
+                },
+                pink: {
+                  border: "border-pink-200/50",
+                  bg: "bg-pink-50/50 dark:bg-pink-950/20",
+                  icon: "text-pink-600",
+                },
+                orange: {
+                  border: "border-orange-200/50",
+                  bg: "bg-orange-50/50 dark:bg-orange-950/20",
+                  icon: "text-orange-600",
+                },
               };
-              const colors = colorClasses[cat.color as keyof typeof colorClasses];
+              const colors =
+                colorClasses[cat.color as keyof typeof colorClasses];
 
               return (
-                <Card key={index} className={`border-2 ${colors.border} ${colors.bg} transition-all hover:shadow-xl`}>
+                <Card
+                  key={index}
+                  className={`border-2 ${colors.border} ${colors.bg} transition-all hover:shadow-xl`}
+                >
                   <CardHeader className="pb-4">
                     <div className="mb-3 flex items-center gap-2">
                       <Search className={`h-4 w-4 ${colors.icon}`} />
-                      <CardTitle className="text-base">{cat.category}</CardTitle>
+                      <CardTitle className="text-base">
+                        {cat.category}
+                      </CardTitle>
                     </div>
-                    <Badge variant="outline" className="text-xs w-fit">{cat.intent}</Badge>
+                    <Badge variant="outline" className="text-xs w-fit">
+                      {cat.intent}
+                    </Badge>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
                       {cat.examples.map((example: string, i: number) => (
-                        <li key={i} className="flex gap-2 text-sm text-muted-foreground">
+                        <li
+                          key={i}
+                          className="flex gap-2 text-sm text-muted-foreground"
+                        >
                           <span className="mt-2 block h-1 w-1 shrink-0 rounded-full bg-primary" />
                           <span>{example}</span>
                         </li>
@@ -282,7 +360,9 @@ export default function SEOStrategyPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600/10 text-blue-600">
               <Target className="h-5 w-5" />
             </div>
-            <h2 className="text-3xl font-bold tracking-tight">Strategic Focus</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Strategic Focus
+            </h2>
           </div>
 
           <div className="grid gap-4 md:grid-cols-2">
@@ -310,7 +390,9 @@ export default function SEOStrategyPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-600/10 text-green-600">
               <Zap className="h-5 w-5" />
             </div>
-            <h2 className="text-3xl font-bold tracking-tight">Plays in Motion</h2>
+            <h2 className="text-3xl font-bold tracking-tight">
+              Plays in Motion
+            </h2>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2">
@@ -330,7 +412,7 @@ export default function SEOStrategyPage() {
                   </div>
                   <CardTitle className="text-xl">{play.title}</CardTitle>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-6 pt-6">
                   {/* Owners */}
                   <div className="flex flex-wrap items-center gap-2">
@@ -350,7 +432,10 @@ export default function SEOStrategyPage() {
                     </h4>
                     <ul className="space-y-2">
                       {play.objectives.map((obj: string, i: number) => (
-                        <li key={i} className="flex gap-3 text-sm text-muted-foreground">
+                        <li
+                          key={i}
+                          className="flex gap-3 text-sm text-muted-foreground"
+                        >
                           <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
                           <span>{obj}</span>
                         </li>
@@ -365,7 +450,10 @@ export default function SEOStrategyPage() {
                     </h4>
                     <ul className="space-y-2">
                       {play.tasks.map((task: string, i: number) => (
-                        <li key={i} className="flex gap-3 text-sm text-muted-foreground">
+                        <li
+                          key={i}
+                          className="flex gap-3 text-sm text-muted-foreground"
+                        >
                           <span className="mt-2 block h-1.5 w-1.5 shrink-0 rounded-full bg-green-600" />
                           <span>{task}</span>
                         </li>
@@ -381,12 +469,17 @@ export default function SEOStrategyPage() {
                         Success Signals
                       </h4>
                       <ul className="space-y-1.5">
-                        {play.successSignals.map((signal: string, i: number) => (
-                          <li key={i} className="flex gap-2 text-sm font-medium text-green-800 dark:text-green-300">
-                            <span>•</span>
-                            <span>{signal}</span>
-                          </li>
-                        ))}
+                        {play.successSignals.map(
+                          (signal: string, i: number) => (
+                            <li
+                              key={i}
+                              className="flex gap-2 text-sm font-medium text-green-800 dark:text-green-300"
+                            >
+                              <span>•</span>
+                              <span>{signal}</span>
+                            </li>
+                          )
+                        )}
                       </ul>
                     </div>
                   )}
@@ -408,15 +501,23 @@ export default function SEOStrategyPage() {
 
             <div className="grid gap-6 md:grid-cols-2">
               {section.enablement.map((item: any, index: number) => (
-                <Card key={index} className="border-dashed border-2 transition-all hover:border-solid hover:border-purple-500/50 hover:shadow-lg">
+                <Card
+                  key={index}
+                  className="border-dashed border-2 transition-all hover:border-solid hover:border-purple-500/50 hover:shadow-lg"
+                >
                   <CardHeader>
                     <CardTitle className="text-lg">{item.title}</CardTitle>
-                    <CardDescription className="text-sm">{item.description}</CardDescription>
+                    <CardDescription className="text-sm">
+                      {item.description}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-3">
                       {item.items.map((enablementItem: string, i: number) => (
-                        <li key={i} className="flex gap-3 text-sm text-muted-foreground">
+                        <li
+                          key={i}
+                          className="flex gap-3 text-sm text-muted-foreground"
+                        >
                           <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-purple-600" />
                           <span>{enablementItem}</span>
                         </li>
@@ -441,13 +542,22 @@ export default function SEOStrategyPage() {
 
             <div className="grid gap-6 md:grid-cols-2">
               {section.experiments.map((experiment: any, index: number) => (
-                <Card key={index} className="border-2 border-orange-200/50 bg-gradient-to-br from-orange-50/50 to-background transition-all hover:border-orange-400/50 hover:shadow-xl dark:from-orange-950/20">
+                <Card
+                  key={index}
+                  className="border-2 border-orange-200/50 bg-gradient-to-br from-orange-50/50 to-background transition-all hover:border-orange-400/50 hover:shadow-xl dark:from-orange-950/20"
+                >
                   <CardHeader>
                     <div className="mb-2 flex items-center justify-between">
-                      <Badge variant="secondary" className="text-xs">Experiment</Badge>
-                      <Badge variant="outline" className="text-xs">{experiment.owner}</Badge>
+                      <Badge variant="secondary" className="text-xs">
+                        Experiment
+                      </Badge>
+                      <Badge variant="outline" className="text-xs">
+                        {experiment.owner}
+                      </Badge>
                     </div>
-                    <CardTitle className="text-lg">{experiment.title}</CardTitle>
+                    <CardTitle className="text-lg">
+                      {experiment.title}
+                    </CardTitle>
                     <CardDescription className="text-sm italic">
                       "{experiment.hypothesis}"
                     </CardDescription>
@@ -458,7 +568,10 @@ export default function SEOStrategyPage() {
                     </h4>
                     <ol className="space-y-2">
                       {experiment.steps.map((step: string, i: number) => (
-                        <li key={i} className="flex gap-3 text-sm text-muted-foreground">
+                        <li
+                          key={i}
+                          className="flex gap-3 text-sm text-muted-foreground"
+                        >
                           <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-semibold text-orange-700 dark:bg-orange-900/50 dark:text-orange-300">
                             {i + 1}
                           </span>

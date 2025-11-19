@@ -61,7 +61,7 @@ export const problemsData: Problem[] = [
     category: "operational",
     severity: "high",
     description:
-      "Museum website (250K monthly visitors, high domain authority) and shop operate independently, missing significant opportunity to leverage audience, cross-promote, and integrate shop seamlessly into museum experience.",
+      "Museum website (25K monthly visitors, high domain authority) and shop operate independently, missing significant opportunity to leverage audience, cross-promote, and integrate shop seamlessly into museum experience.",
     symptoms: [
       "Museum website (DR 72, 22K+ backlinks) not driving shop traffic",
       "Artist pages ranking #1-2 for relevant keywords but not showcasing or linking to artist products",

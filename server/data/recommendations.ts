@@ -83,7 +83,7 @@ export const recommendationsData: Recommendation[] = [
     priority: "high",
     timeline: "Month 1-2",
     description:
-      "Leverage 250K monthly museum visitors by integrating shop products on artist pages.",
+      "Leverage 25K monthly museum visitors by integrating shop products on artist pages.",
     actions: [
       "Build artist product module component for museum site",
       "Map artist pages to shop product tags/collections",

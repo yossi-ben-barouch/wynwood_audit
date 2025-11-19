@@ -104,7 +104,7 @@ export default function ExecutiveDashboard() {
                 className="px-4 py-2 text-base bg-background/50 backdrop-blur"
               >
                 <Target className="w-4 h-4 mr-2" />
-                250K Monthly Visitors
+                25K Monthly Visitors
               </Badge>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function ExecutiveDashboard() {
               <div className="flex gap-3">
                 <div className="mt-1 w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></div>
                 <p className="text-sm text-foreground/90">
-                  <strong>Domain Authority:</strong> DR 72 museum site with 250K
+                  <strong>Domain Authority:</strong> DR 72 museum site with 25K
                   monthly visitors
                 </p>
               </div>
@@ -215,7 +215,7 @@ export default function ExecutiveDashboard() {
               <div className="flex gap-3">
                 <div className="mt-1 w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></div>
                 <p className="text-sm text-foreground/90">
-                  <strong>Museum Synergy:</strong> Leverage 250K visitors to
+                  <strong>Museum Synergy:</strong> Leverage 25K visitors to
                   drive shop traffic
                 </p>
               </div>
@@ -348,7 +348,7 @@ export default function ExecutiveDashboard() {
                   <strong className="text-foreground">
                     Domain Authority 72
                   </strong>{" "}
-                  with 250K monthly museum visitors is an unfair advantage in
+                  with 25K monthly museum visitors is an unfair advantage in
                   your market.
                 </p>
                 <p className="text-base text-foreground/80">
@@ -429,7 +429,7 @@ export default function ExecutiveDashboard() {
                   <strong className="text-foreground">
                     Bridge museum to shop:
                   </strong>{" "}
-                  Turn 250K monthly visitors into qualified shop traffic with
+                  Turn 25K monthly visitors into qualified shop traffic with
                   strategic integration.
                 </p>
                 <p className="text-base text-foreground/80">

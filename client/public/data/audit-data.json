@@ -2,7 +2,7 @@
   "executiveSummary": {
     "keyFinding": "The shop's online sales are underperforming despite having world-class assets (high domain authority, quality products, significant foot traffic), primarily due to fragmented marketing efforts, resource constraints, and misalignment between product development and digital marketing strategies.",
     "overview": [
-      "Strong foundational assets: Domain Authority of 47-72, exclusive artist relationships, and 250K monthly museum visitors",
+      "Strong foundational assets: Domain Authority of 47-72, exclusive artist relationships, and 25K monthly museum visitors",
       "Significant execution challenges limiting online revenue growth despite 200% growth in years 1-2",
       "Current year showing 10% decline attributed to tariffs and supplier instability",
       "Critical gap: Alejandro (E-Commerce Director) stretched across 4 websites with minimal support",
@@ -12,7 +12,7 @@
     "criticalMetrics": [
       {
         "label": "Museum Monthly Traffic",
-        "value": "250K",
+        "value": "25K",
         "trend": 12,
         "trendDirection": "up"
       },
@@ -359,7 +359,7 @@
       "title": "Untapped Museum-Shop Synergy & Integration",
       "category": "operational",
       "severity": "high",
-      "description": "Museum website (250K monthly visitors, high domain authority) and shop operate independently, missing significant opportunity to leverage audience, cross-promote, and integrate shop seamlessly into museum experience.",
+      "description": "Museum website (25K monthly visitors, high domain authority) and shop operate independently, missing significant opportunity to leverage audience, cross-promote, and integrate shop seamlessly into museum experience.",
       "symptoms": [
         "Museum website (DR 72, 22K+ backlinks) not driving shop traffic",
         "Artist pages ranking #1-2 for relevant keywords but not showcasing or linking to artist products",
@@ -477,7 +477,7 @@
       "phase": "Short-Term (1-3 Months)",
       "priority": "high",
       "timeline": "Month 1-2",
-      "description": "Leverage 250K monthly museum visitors by integrating shop products on artist pages.",
+      "description": "Leverage 25K monthly museum visitors by integrating shop products on artist pages.",
       "actions": [
         "Build artist product module component for museum site",
         "Map artist pages to shop product tags/collections",
