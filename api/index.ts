@@ -1,11 +1,8 @@
-import express from "express";
-import cookieParser from "cookie-parser";
+import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { createHmac } from "crypto";
 import { auditData } from "../server/data/audit-data";
 import { promotionAudit } from "../server/data/promotion-audit";
 import { platformReviewData } from "../server/data/Audit/platform-review";
-
-const app = express();
 
 const AUTH_PASSWORD = process.env.AUTH_PASSWORD || "changeme";
 const SESSION_SECRET =
@@ -38,91 +35,126 @@ function verifyAuthToken(token: string): boolean {
   return Date.now() < expiresAt;
 }
 
-// Middleware
-app.use(express.json());
-app.use(cookieParser());
+// Helper to parse cookies
+function parseCookies(
+  cookieHeader: string | undefined
+): Record<string, string> {
+  if (!cookieHeader) return {};
+  return Object.fromEntries(
+    cookieHeader.split(";").map((c) => {
+      const [key, ...v] = c.trim().split("=");
+      return [key, v.join("=")];
+    })
+  );
+}
 
-// Auth endpoints
-app.post("/auth/login", (req, res) => {
-  const { password } = req.body;
-  if (password === AUTH_PASSWORD) {
-    const token = createAuthToken();
-    res.cookie("auth_token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
-      maxAge: 24 * 60 * 60 * 1000, // 24 hours
-      path: "/",
-    });
-    res.json({ success: true, message: "Login successful" });
-  } else {
-    res.status(401).json({ success: false, message: "Invalid password" });
+// Helper to set cookie
+function setCookie(
+  res: VercelResponse,
+  name: string,
+  value: string,
+  options: any
+) {
+  const cookieParts = [`${name}=${value}`];
+  if (options.httpOnly) cookieParts.push("HttpOnly");
+  if (options.secure) cookieParts.push("Secure");
+  if (options.sameSite) cookieParts.push(`SameSite=${options.sameSite}`);
+  if (options.maxAge)
+    cookieParts.push(`Max-Age=${Math.floor(options.maxAge / 1000)}`);
+  if (options.path) cookieParts.push(`Path=${options.path}`);
+  res.setHeader("Set-Cookie", cookieParts.join("; "));
+}
+
+// Main handler function
+export default async function handler(req: VercelRequest, res: VercelResponse) {
+  // Enable CORS
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
   }
-});
 
-app.post("/auth/logout", (req, res) => {
-  res.clearCookie("auth_token", { path: "/" });
-  res.json({ success: true, message: "Logged out successfully" });
-});
+  const { url, method } = req;
+  const path = url?.replace("/api", "") || "/";
+  const cookies = parseCookies(req.headers.cookie as string);
+  const token = cookies.auth_token;
 
-app.get("/auth/status", (req, res) => {
-  const token = req.cookies?.auth_token;
-  const authenticated = verifyAuthToken(token);
-  res.json({ authenticated });
-});
-
-// Auth middleware
-const requireAuth = (
-  req: express.Request,
-  res: express.Response,
-  next: express.NextFunction
-) => {
-  const token = req.cookies?.auth_token;
-  if (verifyAuthToken(token)) {
-    return next();
+  // Auth endpoints
+  if (path === "/auth/login" && method === "POST") {
+    const { password } = req.body as { password: string };
+    if (password === AUTH_PASSWORD) {
+      const authToken = createAuthToken();
+      setCookie(res, "auth_token", authToken, {
+        httpOnly: true,
+        secure: true,
+        sameSite: "lax",
+        maxAge: 24 * 60 * 60 * 1000,
+        path: "/",
+      });
+      return res
+        .status(200)
+        .json({ success: true, message: "Login successful" });
+    } else {
+      return res
+        .status(401)
+        .json({ success: false, message: "Invalid password" });
+    }
   }
-  res.status(401).json({ message: "Unauthorized" });
-};
 
-// Protected data endpoints
-app.get("/executive-summary", requireAuth, (_req, res) => {
-  res.json(auditData.executiveSummary);
-});
+  if (path === "/auth/logout" && method === "POST") {
+    res.setHeader(
+      "Set-Cookie",
+      "auth_token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT"
+    );
+    return res
+      .status(200)
+      .json({ success: true, message: "Logged out successfully" });
+  }
 
-app.get("/organizational-structure", requireAuth, (_req, res) => {
-  res.json(auditData.organizational);
-});
+  if (path === "/auth/status" && method === "GET") {
+    const authenticated = verifyAuthToken(token);
+    return res.status(200).json({ authenticated });
+  }
 
-app.get("/current-state", requireAuth, (_req, res) => {
-  res.json(auditData.currentState);
-});
+  // Check auth for protected routes
+  if (!verifyAuthToken(token)) {
+    return res.status(401).json({ message: "Unauthorized" });
+  }
 
-app.get("/problems", requireAuth, (_req, res) => {
-  res.json(auditData.problems);
-});
+  // Protected data endpoints
+  if (path === "/executive-summary" && method === "GET") {
+    return res.status(200).json(auditData.executiveSummary);
+  }
+  if (path === "/organizational-structure" && method === "GET") {
+    return res.status(200).json(auditData.organizational);
+  }
+  if (path === "/current-state" && method === "GET") {
+    return res.status(200).json(auditData.currentState);
+  }
+  if (path === "/problems" && method === "GET") {
+    return res.status(200).json(auditData.problems);
+  }
+  if (path === "/recommendations" && method === "GET") {
+    return res.status(200).json(auditData.recommendations);
+  }
+  if (path === "/marketing-strategy" && method === "GET") {
+    return res.status(200).json(auditData.marketingStrategy);
+  }
+  if (path === "/promotion-audit" && method === "GET") {
+    return res.status(200).json(promotionAudit);
+  }
+  if (path === "/platform-review" && method === "GET") {
+    return res.status(200).json(platformReviewData);
+  }
+  if (path === "/team-reviews" && method === "GET") {
+    return res.status(200).json(auditData.teamReviews);
+  }
+  if (path === "/audit-data" && method === "GET") {
+    return res.status(200).json(auditData);
+  }
 
-app.get("/recommendations", requireAuth, (_req, res) => {
-  res.json(auditData.recommendations);
-});
-
-app.get("/marketing-strategy", requireAuth, (_req, res) => {
-  res.json(auditData.marketingStrategy);
-});
-
-app.get("/promotion-audit", requireAuth, (_req, res) => {
-  res.json(promotionAudit);
-});
-
-app.get("/platform-review", requireAuth, (_req, res) => {
-  res.json(platformReviewData);
-});
-
-app.get("/team-reviews", requireAuth, (_req, res) => {
-  res.json(auditData.teamReviews);
-});
-
-app.get("/audit-data", requireAuth, (_req, res) => {
-  res.json(auditData);
-});
-
-export default app;
+  return res.status(404).json({ message: "Not found" });
+}
